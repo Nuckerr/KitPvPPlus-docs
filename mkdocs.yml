@@ -1,7 +1,7 @@
 site_name: KitPvP Plus Documentation
 site_url: https://kitpvpplus.pages.dev
-repo_url: https://github.com/Nuckerr/KitPvPPlus
-repo_name: Nuckerr/KitPvPPlus
+repo_url: https://github.com/Nuckerr/KitPvPPlus-docs
+repo_name: Nuckerr/KitPvPPlus-docs
 theme:
   name: material
   language: en
