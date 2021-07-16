@@ -1,0 +1,22 @@
+site_name: KitPvP Plus Documentation
+site_url: https://kitpvpplus.pages.dev
+repo_url: https://github.com/Nuckerr/KitPvPPlus
+repo_name: Nuckerr/KitPvPPlus
+theme:
+  name: material
+  language: en
+  logo: assets/icon.png
+  favicon: assets/icon.png
+  palette:
+    - scheme: default
+      primary: cyan
+      accent: orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: red
+      accent: pink
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
