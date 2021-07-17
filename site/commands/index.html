@@ -116,7 +116,7 @@
         
           
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
           
             <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31z"/></svg>
@@ -236,21 +236,6 @@
 
   
   
-  
-    <li class="md-nav__item">
-      <a href="../api/" class="md-nav__link">
-        Plugin API
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
     
   
   
@@ -279,7 +264,22 @@
   
     <li class="md-nav__item">
       <a href="../configs/" class="md-nav__link">
-        Configuration Files
+        Configs
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin-api/" class="md-nav__link">
+        Plugin API
       </a>
     </li>
   
@@ -324,35 +324,70 @@
 Lets the player view their balance.<br />
 <strong>Aliases:</strong> <code>/bal</code><br />
 <strong>Permissions:</strong> </p>
-<p><code>/economy</code><br />
-Allows server admins manage another player's balance.<br />
-<strong>Aliases:</strong> <code>/eco</code><br />
-<strong>Permissions:</strong> </p>
 <p><code>/join</code><br />
-Sends you to the arena<br />
+Sends you to the arena.<br />
 <strong>Aliases:</strong> <code>/play</code><br />
 <strong>Permissions:</strong> </p>
 <p><code>/kit</code><br />
 Opens the kit selector or gives you a kit.<br />
-<strong>Aliases:</strong> <em>None</em><br />
+<strong>Aliases:</strong> <code>/kits</code><br />
 <strong>Usage:</strong> 
-- <code>/kit</code> - Opens the GUI
-- <code>/kit &lt;kit name&gt;</code> - Allows you to select a kit without opening the GUI</p>
+- <code>/kit</code> - Opens the GUI.
+- <code>/kit &lt;kit name&gt;</code> - Allows you to select a kit without opening the GUI.
+- <code>/kit &lt;kitname&gt; [player]</code> - Loads a given kit (To given player if provided).
+- <code>/kit edit displayname &lt;kitname&gt; &lt;newdisplayname&gt;</code> - Edit's the displayname of a given kit.
+- <code>/kit edit icon &lt;kitname&gt;</code> - Edits the icon of given kit to the item in your hand.
+- <code>/kit contents &lt;kitname&gt;</code> - Edits the contents of the given kit to the items in your inventory.</p>
 <p><code>/kitpvp</code><br />
-Used for managing the KitPvP Plus plugin<br />
-<strong>Aliases:</strong> <code>/kpvp</code> <code>/kitpvpcore</code> <code>/kpvpcore</code> <code>/kpvpc</code> <code>/kitpvpplus</code> <code>/kpvpplus</code> <code>/kpvpp</code> <code>/kitpvpp</code> <br />
+Used for managing the KitPvP Plus plugin.<br />
+<strong>Aliases:</strong> <code>/kpvp</code>, <code>/kitpvpcore</code>, <code>/kpvpcore</code>, <code>/kpvpc</code>, <code>/kitpvpplus</code>, <code>/kpvpplus</code>, <code>/kpvpp</code>, <code>/kitpvpp</code> <br />
 <strong>Permissions:</strong> <code>kitpvpplus.admin</code></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If the player does not have permission, it will just send the credits  </p>
+<p>If the player does not have permission, it will just send the credits.  </p>
 </div>
 <p><strong>Usage:</strong></p>
 <ul>
-<li><code>/kitpvp abilities [ability]</code> - Opens gui with all the abilitie items (unless specified in args.)</li>
-<li><code>/kitpvp reload [config|database]</code> - Reloads the plugin (If it is specifed in args, it will only reload those)</li>
-<li><code>/kitpvp credits</code> - Sends the credits of the plugin</li>
+<li><code>/kitpvp abilities [ability]</code> - Opens gui with all the ability items (unless specified in args).</li>
+<li><code>/kitpvp reload</code> - Reloads the configs and database.</li>
+<li><code>/kitpvp reload config</code> - Reloads the configuration.</li>
+<li><code>/kitpvp reload database</code> - Reloads the database.</li>
+<li><code>/kitpvp credits</code> - Sends the credits of all the people who helped out with the plugin.</li>
 </ul>
-<p><code>/</code></p>
+<p><code>/lobby</code><br />
+Sends you back to spawn.<br />
+<strong>Aliases:</strong> <code>/l</code>, <code>/spawn</code>, <code>/stuck</code><br />
+<strong>Permissions:</strong></p>
+<p><code>/playersbalance</code><br />
+Shows someone elses balance.<br />
+<strong>Aliases:</strong> <code>/playersbal</code>, <code>otherbal</code>, <code>otherbalance</code><br />
+<strong>Permissions:</strong></p>
+<p><code>/pay</code><br />
+Sends money to another player.<br />
+<strong>Aliases:</strong> <code>/sendmoney</code><br />
+<strong>Permissions:</strong></p>
+<p><code>/setarena</code><br />
+Sets the location for the fighting arena.<br />
+<strong>Aliases:</strong> <em>None</em><br />
+<strong>Permissions:</strong></p>
+<p><code>/setspawn</code><br />
+Sets the location for spawn.<br />
+<strong>Aliases:</strong> <em>None</em><br />
+<strong>Permissions:</strong></p>
+<p><code>/statistics</code><br />
+View your stats.<br />
+<strong>Aliases:</strong> <code>/stats</code><br />
+<strong>Permissions:</strong></p>
+<p><code>/econamy</code><br />
+<strong>Usage:</strong></p>
+<ul>
+<li><code>/eco give [player] [amount]</code> - Adds x amount of money to a players balance.</li>
+<li><code>/eco set [player] [amount]</code> - Sets the players balance to x amount.</li>
+<li><code>/eco reset [player]</code> - Resets a players balance to 0</li>
+</ul>
+<p><strong>Aliases:</strong> <code>/eco</code><br />
+<strong>Permissions:</strong></p>
+<p><code>/</code>  </p>
 <p><strong>Aliases:</strong><br />
 <strong>Permissions:</strong></p>
 <!---| Command || Description || Aliases || Permissions |
@@ -371,6 +406,11 @@ Used for managing the KitPvP Plus plugin<br />
           </div>
         </div>
         
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
       </main>
       
         
@@ -379,7 +419,7 @@ Used for managing the KitPvP Plus plugin<br />
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../api/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Plugin API" rel="prev">
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: KitPvP Plus Home" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -388,20 +428,20 @@ Used for managing the KitPvP Plus plugin<br />
               <span class="md-footer__direction">
                 Previous
               </span>
-              Plugin API
+              KitPvP Plus Home
             </div>
           </div>
         </a>
       
       
         
-        <a href="../configs/" class="md-footer__link md-footer__link--next" aria-label="Next: Configuration Files" rel="next">
+        <a href="../configs/" class="md-footer__link md-footer__link--next" aria-label="Next: Configs" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Configuration Files
+              Configs
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -430,7 +470,7 @@ Used for managing the KitPvP Plus plugin<br />
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.ddd52ceb.min.js"></script>

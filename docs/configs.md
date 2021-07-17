@@ -1,4 +1,7 @@
-#  Configuration Files
+#  Configs
+
+!!! danger
+
 ## config.yml
 
 `data-storage`
@@ -99,7 +102,7 @@ In Spigot there are normally 3 worlds:
 
 You can disable any worlds here.  
 **Syntax:** 
-```yml
+```yaml
 disabled-worlds:
    - never_gonna_give_you_up
    - never_gonna_let_you_down

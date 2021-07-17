@@ -5,36 +5,77 @@ Lets the player view their balance.
 **Aliases:** `/bal`  
 **Permissions:** 
 
-`/economy`  
-Allows server admins manage another player's balance.  
-**Aliases:** `/eco`  
-**Permissions:** 
-
 `/join`  
-Sends you to the arena  
+Sends you to the arena.  
 **Aliases:** `/play`  
 **Permissions:** 
 
 `/kit`  
 Opens the kit selector or gives you a kit.  
-**Aliases:** *None*  
+**Aliases:** `/kits`  
 **Usage:** 
-- `/kit` - Opens the GUI
-- `/kit <kit name>` - Allows you to select a kit without opening the GUI
+- `/kit` - Opens the GUI.
+- `/kit <kit name>` - Allows you to select a kit without opening the GUI.
+- `/kit <kitname> [player]` - Loads a given kit (To given player if provided).
+- `/kit edit displayname <kitname> <newdisplayname>` - Edit's the displayname of a given kit.
+- `/kit edit icon <kitname>` - Edits the icon of given kit to the item in your hand.
+- `/kit contents <kitname>` - Edits the contents of the given kit to the items in your inventory.
 
 `/kitpvp`  
-Used for managing the KitPvP Plus plugin  
-**Aliases:** `/kpvp` `/kitpvpcore` `/kpvpcore` `/kpvpc` `/kitpvpplus` `/kpvpplus` `/kpvpp` `/kitpvpp`   
+Used for managing the KitPvP Plus plugin.  
+**Aliases:** `/kpvp`, `/kitpvpcore`, `/kpvpcore`, `/kpvpc`, `/kitpvpplus`, `/kpvpplus`, `/kpvpp`, `/kitpvpp`   
 **Permissions:** `kitpvpplus.admin`
 !!! note
-    If the player does not have permission, it will just send the credits  
+    If the player does not have permission, it will just send the credits.  
 **Usage:**
 
-- `/kitpvp abilities [ability]` - Opens gui with all the abilitie items (unless specified in args.)
-- `/kitpvp reload [config|database]` - Reloads the plugin (If it is specifed in args, it will only reload those)
-- `/kitpvp credits` - Sends the credits of the plugin
+- `/kitpvp abilities [ability]` - Opens gui with all the ability items (unless specified in args).
+- `/kitpvp reload` - Reloads the configs and database.
+- `/kitpvp reload config` - Reloads the configuration.
+- `/kitpvp reload database` - Reloads the database.
+- `/kitpvp credits` - Sends the credits of all the people who helped out with the plugin.
 
-`/`
+`/lobby`  
+Sends you back to spawn.  
+**Aliases:** `/l`, `/spawn`, `/stuck`  
+**Permissions:**
+
+`/playersbalance`  
+Shows someone elses balance.  
+**Aliases:** `/playersbal`, `otherbal`, `otherbalance`  
+**Permissions:**
+
+`/pay`  
+Sends money to another player.  
+**Aliases:** `/sendmoney`  
+**Permissions:**
+
+`/setarena`  
+Sets the location for the fighting arena.  
+**Aliases:** *None*  
+**Permissions:**
+
+`/setspawn`  
+Sets the location for spawn.  
+**Aliases:** *None*  
+**Permissions:**
+
+`/statistics`  
+View your stats.  
+**Aliases:** `/stats`  
+**Permissions:**
+
+`/econamy`  
+**Usage:**
+
+- `/eco give [player] [amount]` - Adds x amount of money to a players balance.
+- `/eco set [player] [amount]` - Sets the players balance to x amount.
+- `/eco reset [player]` - Resets a players balance to 0
+
+**Aliases:** `/eco`  
+**Permissions:**
+
+`/`  
   
 **Aliases:**  
 **Permissions:**

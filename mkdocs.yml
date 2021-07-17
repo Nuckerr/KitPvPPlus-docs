@@ -7,6 +7,7 @@ markdown_extensions:
   - pymdownx.highlight:
       linenums: true
   - pymdownx.superfences
+  - pymdownx.tabbed
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
@@ -15,6 +16,8 @@ theme:
   language: en
   logo: assets/icon.png
   favicon: assets/icon.png
+  features:
+    - navigation.top
   palette:
     - scheme: slate
       primary: red
@@ -23,7 +26,7 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
     - scheme: default
-      primary: cyan
+      primary: blue
       accent: orange
       toggle:
         icon: material/weather-night
