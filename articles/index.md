@@ -3,8 +3,8 @@ This is the official wiki for the plugin KitPvP Plus. This wiki covers everythin
 
 If you cant find the answer your looking for, you can ask in my [support server](http://nckr.link/support)
 
-|Pages|
-|:--:|
-|[Configs](/configs/)|
-|[Commands](/commands/)|
-|[API](/api/)|
+
+## Pages:
+- [Commands](/configs/)
+- [Configs](/configs)
+- [Plugin API](/plugin-api)

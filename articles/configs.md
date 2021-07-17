@@ -1,8 +1,15 @@
 #  Configs
 
 !!! danger
+    This article covers the `config.yml` and the `messages.yml`. If you touch any of the other config files, **this is at**
+    **your own risk!**. These files contain data and if it is broken, all that data will be lost, rendering major parts of your
+    server as broken.
 
-## config.yml
+!!! tip
+    Before reloading/restarting the plugin, backup your config files so that if anything goes wrong, you still have them. You can
+    also use [yaml linter](http://www.yamllint.com/) to see if there are any syntax errors in your config
+
+## `config.yml`
 
 `data-storage`
 : This section of the file defines how data is stored.
@@ -104,10 +111,8 @@ You can disable any worlds here.
 **Syntax:** 
 ```yaml
 disabled-worlds:
-   - never_gonna_give_you_up
-   - never_gonna_let_you_down
-   - never_gonna_run_around
-   - and_desert_you
+   - world_the_end
+   - world_nether
 ```
 `spawn`
 : This section defines the text on the spawn/lobby scoreboard.  
@@ -159,7 +164,7 @@ board:
 ```
 *Note: Minecraft colour codes can be used in any of the quote marks in the config above.*
 
-## messages.yml
+## `messages.yml`
 
 This section won't be so well documented as there is over 100 different messages and I think it is quite self-explanatory. However, I will document some of the more important things.
 **Minecraft colour codes can be used in any of the messages, see end of docs.**
