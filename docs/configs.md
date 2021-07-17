@@ -13,17 +13,16 @@
 
 `host`
 : Sets the IP address of the MySQL or Mongo database.  
+!!! warning
+    This should **NOT** include port number
 **Syntax:** `host: your-database-ip`  
-*Note: this should **NOT** include port number.*
 
 `port`
 : Sets the port on which the database is listening on.  
+!!! tip
+    The default port for MySQL is 3306 and the default
+    port for MongoDB is 27017
 **Syntax:** `port: database-port`
-
-| Database | Default Port |
-| :---: | :----: |
-| MySQL | 3306 |
-| Mongo | 27017 |
 
 `database`
 : Identifies the database in which to store data.  
@@ -62,7 +61,8 @@
 `kills`
 : Defines how many experience points a player should receive per kill.  
 **Syntax:** `kills: number-of-experience-points`  
-*Note: This should be a number with a decimal point. E.g. `kills: 25.0`. Even if it is a whole number, it should still have the `.0` after it.*
+!!! note
+    This should be a number with a decimal point. E.g. `kills: 25.0`. Even if it is a whole number, it should still have the `.0` after it.
 
 `filler-item`
 : This defines the item that should fill in the gaps in the inventory GUI.  
@@ -71,18 +71,12 @@
 `abilities`
 : This section is where the abilities are defined  
 **Syntax:**
-```yml
-#This is the name of the ability, it does not show up in-game.
-ability-name:
-  #This is the name of the item that will give the ability
-  displayname:  "display-name-here"
-  #This is the item that will be given to player.
-  #Item codes can be found here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
-  material:  "ITEM-CODE"
-  #How many of the items to give to the player.
-  amount:  69
-  #Pretty purple text that is added to the item.
-  lore:
+```yaml
+ability-name: #This is the name of the ability, it does not show up in-game.
+  displayname:  "display-name-here" #This is the name of the item that will give the ability.
+  material:  "ITEM-CODE" #This is the item that will be given to player, item codes can be found here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+  amount:  69 #How many of the items to give to the player.
+  lore: #Pretty purple text that is added to the item.
      -  "&7Shoot opponents with primed tnt"
      -  "&7Just right click"
 ```
@@ -124,7 +118,7 @@ disabled-worlds:
 `board`
 : This section defines the text on the scoreboard  
 **Syntax:**
-```yml
+```yaml
 board:
  -  "&7%bar%"#This is a bar/line coloured gray with the code '&7'
  -  "&7Hello there %player%"#This says 'Hello there' and then the players username, defined by '%player%' in the colour gray, indicated by '&7'.
@@ -149,7 +143,7 @@ board:
 `board`
 : This section defines the text on the scoreboard  
 **Syntax:**
-```yml
+```yaml
 board:
  -  "&7%bar%"#This is a bar/line coloured gray with the code '&7'
  -  "&7Hello there %player%"#This says 'Hello there' and then the players username, defined by '%player%' in the colour gray, indicated by '&7'.
@@ -174,13 +168,13 @@ E.g. `[KitPvP Plus] Never gonna give you up :)`
 ## Minecraft Colour Codes
 Here is an example on how to use colour codes:
 
-`"&4Red Text"`: This text is red as it uses the '&4' colour code.
+:white_check_mark: `"&4Red Text"`: This text is red as it uses the '&4' colour code.
 
-`"&4&nRed Underlined text"`: This text is red and underlined as it uses the '&4' colour code to make it red and the '&n' formatting code to underline.
+:white_check_mark: `"&4&nRed Underlined text"`: This text is red and underlined as it uses the '&4' colour code to make it red and the '&n' formatting code to underline.
 
-`"&cRed &aGreen &9Blue"`: You can colour code different words by placing colour codes next to them.
+:white_check_mark: `"&cRed &aGreen &9Blue"`: You can colour code different words by placing colour codes next to them.
 
-`"Red&c Green&a Blue&9"`: This would highlight the text in front of the colour code so "Red" wouldn't be coloured and "Green" would be highlighted red and so on and so forth.
+:x: `"Red&c Green&a Blue&9"`: This would highlight the text in front of the colour code so "Red" wouldn't be coloured and "Green" would be highlighted red and so on and so forth.
 
 | Colour | Code |
 |:--:|:--:|
@@ -204,3 +198,6 @@ Here is an example on how to use colour codes:
 | *Italics* | &o |
 | Underline | &n |
 | ~~Strikethrough~~ | &m |
+
+---
+This documentation was set up and written by [realdeadbeef](https://github.com/realdeadbeef)

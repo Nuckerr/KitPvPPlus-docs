@@ -9,21 +9,21 @@
       
       
       
-        <link rel="canonical" href="https://wiki.nucker.me/">
+        <link rel="canonical" href="https://wiki.nucker.me/api/">
       
-      <link rel="icon" href="assets/icon.png">
+      <link rel="icon" href="../assets/icon.png">
       <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.10">
     
     
       
-        <title>KitPvP Plus Documentation</title>
+        <title>Plugin API - KitPvP Plus Documentation</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.1fe995fd.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.1fe995fd.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.f1a3b89f.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.f1a3b89f.min.css">
         
       
     
@@ -57,7 +57,7 @@
     <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="pink">
   
     
-    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
       <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#kitpvp-plus-home" class="md-skip">
+        <a href="#plugin-api" class="md-skip">
           Skip to content
         </a>
       
@@ -78,9 +78,9 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="KitPvP Plus Documentation" class="md-header__button md-logo" aria-label="KitPvP Plus Documentation" data-md-component="logo">
+    <a href=".." title="KitPvP Plus Documentation" class="md-header__button md-logo" aria-label="KitPvP Plus Documentation" data-md-component="logo">
       
-  <img src="assets/icon.png" alt="logo">
+  <img src="../assets/icon.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              KitPvP Plus Home
+              Plugin API
             
           </span>
         </div>
@@ -192,9 +192,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="KitPvP Plus Documentation" class="md-nav__button md-logo" aria-label="KitPvP Plus Documentation" data-md-component="logo">
+    <a href=".." title="KitPvP Plus Documentation" class="md-nav__button md-logo" aria-label="KitPvP Plus Documentation" data-md-component="logo">
       
-  <img src="assets/icon.png" alt="logo">
+  <img src="../assets/icon.png" alt="logo">
 
     </a>
     KitPvP Plus Documentation
@@ -221,6 +221,21 @@
 
   
   
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        KitPvP Plus Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
     
   
   
@@ -232,25 +247,40 @@
         
       
       
-      <a href="." class="md-nav__link md-nav__link--active">
-        KitPvP Plus Home
-      </a>
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Plugin API
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="api/" class="md-nav__link">
+      <a href="./" class="md-nav__link md-nav__link--active">
         Plugin API
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#custom-abilities" class="md-nav__link">
+    Custom abilities
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -263,7 +293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="commands/" class="md-nav__link">
+      <a href="../commands/" class="md-nav__link">
         Commands
       </a>
     </li>
@@ -278,7 +308,7 @@
   
   
     <li class="md-nav__item">
-      <a href="configs/" class="md-nav__link">
+      <a href="../configs/" class="md-nav__link">
         Configuration Files
       </a>
     </li>
@@ -304,6 +334,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#custom-abilities" class="md-nav__link">
+    Custom abilities
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -314,32 +359,39 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/Nuckerr/KitPvPPlus-docs/edit/master/docs/index.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/Nuckerr/KitPvPPlus-docs/edit/master/docs/api.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="kitpvp-plus-home">KitPvP Plus Home</h1>
-<p>This is the official wiki for the plugin KitPvP Plus. This wiki covers everything you should need to know (configs, commands, external plugin api, etc.). If there is something you think should be added, make a issue <a href="https://github.com/Nuckerr/KitPvPPlus-docs/issues/new/choose">here</a> or add it and make a pull request <a href="https://github.com/Nuckerr/KitPvPPlus-docs/compare">here</a></p>
-<p>If you cant find the answer your looking for, you can ask in my <a href="http://nckr.link/support">support server</a></p>
-<table>
-<thead>
-<tr>
-<th align="center">Pages</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center"><a href="/configs/">Configs</a></td>
-</tr>
-<tr>
-<td align="center"><a href="/commands/">Commands</a></td>
-</tr>
-<tr>
-<td align="center"><a href="/api/">API</a></td>
-</tr>
-</tbody>
-</table>
+                <h1 id="plugin-api">Plugin API</h1>
+<p>The api allows you to intergrate your plugin with KitPvP Plus.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Certain parts of the plugin are not included in the api.
+They be being added however you will have to
+use the internal plugin to access them in the mean time</p>
+</div>
+<h2 id="custom-abilities">Custom abilities</h2>
+<p>Though players are limited to the ablities that come with the plugin. However you create your own!</p>
+<p>First of all we need to create a new class for our ability. It also needs to extend the <code>Ability</code> class
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ExampleAbility</span> <span class="kd">extends</span> <span class="n">Ability</span> <span class="p">{</span>
+
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+You might get some errors but we'll fix them now.</p>
+<p>We're going to add a constructor to our class that looks something like this
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">public</span> <span class="nf">ExampleAbility</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">super</span><span class="p">(</span><span class="s">&quot;example_ability&quot;</span><span class="p">,</span> <span class="k">new</span> <span class="n">ItemStack</span><span class="p">(</span><span class="n">Material</span><span class="p">.</span><span class="na">APPLE</span><span class="p">));</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+The first paramater of the super method is the id of our ability. This is what identifies</p>
                 
               
               
@@ -358,15 +410,30 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
+        
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: KitPvP Plus Home" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              KitPvP Plus Home
+            </div>
+          </div>
+        </a>
+      
       
         
-        <a href="api/" class="md-footer__link md-footer__link--next" aria-label="Next: Plugin API" rel="next">
+        <a href="../commands/" class="md-footer__link md-footer__link--next" aria-label="Next: Commands" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Plugin API
+              Commands
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -395,10 +462,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.ddd52ceb.min.js"></script>
+      <script src="../assets/javascripts/bundle.ddd52ceb.min.js"></script>
       
     
   </body>
