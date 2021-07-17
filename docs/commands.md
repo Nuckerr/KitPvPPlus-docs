@@ -14,6 +14,7 @@ Sends you to the arena.
 Opens the kit selector or gives you a kit.  
 **Aliases:** `/kits`  
 **Usage:** 
+
 - `/kit` - Opens the GUI.
 - `/kit <kit name>` - Allows you to select a kit without opening the GUI.
 - `/kit <kitname> [player]` - Loads a given kit (To given player if provided).
