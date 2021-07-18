@@ -6,6 +6,9 @@ The api allows you to intergrate your plugin with KitPvP Plus.
     They be being added however you will have to
     use the internal plugin to access them in the mean time
 
+!!! tip
+    All of the methods and classes have taliored descriptions (Javadocs). You can use IntelliSense the view them inside your ide or navigate it's [webpage](https://jdocs.nucker.me) to look at them
+
 ## Setup
 First of all you need to add the api as a dependency to your project  
 
@@ -172,3 +175,6 @@ Getting data from the other configs is pretty similar
 |:------:|:--:|
 |Ability Manager|*None*|
 |Kit Manager|*None*|
+
+---
+Found a problem? This documentation is open source and can be found [here](https://github.com/Nuckerr/KitPvPPlus-docs).

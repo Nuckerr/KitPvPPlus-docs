@@ -98,3 +98,6 @@ View your stats.
 | `/balance` || Lets the player view their balance. ||  ||  |
 | `/economy` || Allows server admins to manage other player's balancel. ||`eco`||
 |  ||  | -->
+
+---
+Found a problem? This documentation is open source and can be found [here](https://github.com/Nuckerr/KitPvPPlus-docs).

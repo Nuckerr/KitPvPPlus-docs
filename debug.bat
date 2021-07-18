@@ -1,2 +1,0 @@
-mkdocs serve
-pause

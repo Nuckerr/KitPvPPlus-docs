@@ -1,5 +1,7 @@
 #  Configs
 
+This section of documentation was written by [realdeadbeef](https://github.com/realdeadbeef)
+
 !!! danger
     This article covers the `config.yml` and the `messages.yml`. If you touch any of the other config files, **this is at**
     **your own risk!**. These files contain data and if it is broken, all that data will be lost, rendering major parts of your
@@ -36,17 +38,18 @@
 
 `database`
 : Identifies the database in which to store data.  
-**Syntax:** `database: "database-name"`  
-*Note: this value is **only** needed for MySQL.*
+**Syntax:** `database: "database-name"`    
+!!! note
+    This value is **only** needed for MySQL.
 
 `authentication`
 : Authentication settings.  
-*Note: This setting has no value.*
 
 `enabled`
 : Turns on authentication for the database.  
 **Syntax:** `enabled: true|false`  
-*Note: authentication is required for MySQL.*
+!!! warning
+    Authentication is required for MySQL.
 
 `username`
 : Sets the username used for authenticating with the database.  
@@ -66,7 +69,6 @@
 
 `exp`
 : In-game experience points settings.  
-*Note: This setting has no value.*
 
 `kills`
 : Defines how many experience points a player should receive per kill.  
@@ -76,21 +78,22 @@
 
 `filler-item`
 : This defines the item that should fill in the gaps in the inventory GUI.  
-*Note: Item codes can be found here: [https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html)*
+!!! tip
+    Item codes can be found [here](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html)
 
-`abilities`
-: This section is where the abilities are defined  
-**Syntax:**
+`abilities`: This allows you to customize how the abilities look  
+**Syntax:** *(Example)*
 ```yaml
-ability-name: #This is the name of the ability, it does not show up in-game.
-  displayname:  "display-name-here" #This is the name of the item that will give the ability.
-  material:  "ITEM-CODE" #This is the item that will be given to player, item codes can be found here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
-  amount:  69 #How many of the items to give to the player.
-  lore: #Pretty purple text that is added to the item.
+tnt-shooter: #This is the name of the ability, it does not show up in-game.
+  displayname:  "&cTnT Shooter" #This is the name of the item that will give the ability.
+  material:  "TNT" #This is the item that will be given to player, item codes can be found here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+  amount:  10 #How many of the items to give to the player.
+  lore: #Pretty text that is added to the item's description/lore box.
      -  "&7Shoot opponents with primed tnt"
      -  "&7Just right click"
 ```
-*Note: Minecraft colour codes can be used in the lore quote marks in the config above, see end of docs.*
+!!! note
+    Minecraft colour codes can be used in the lore quote marks in the config above, see end of docs.
 
 `scoreboard`
 : This section is where the scoreboard settings are defined.
@@ -116,12 +119,10 @@ disabled-worlds:
 ```
 `spawn`
 : This section defines the text on the spawn/lobby scoreboard.  
-*Note: this setting has no value*
 
 `title`
 : This defines the text at the top of the scoreboard (The Title).  
 **Syntax:** `title: "title-text"`  
-*Note: Minecraft colour coding tags can be used here, see end of docs.*
 
 `board`
 : This section defines the text on the scoreboard  
@@ -137,16 +138,13 @@ board:
  -  "play.example.com"#Some customisable text
  -  "&7%bar%"#This is a bar/line coloured gray with the code '&7'
 ```
-*Note: Minecraft colour codes can be used in any of the quote marks in the config above.*
 
 `arena`
 : This section defines the text on the arena scoreboard.  
-*Note: This setting has no value.*
 
 `title`
 : This defines the text at the top of the scoreboard (The Title).  
 **Syntax:** `title: "title-text"`  
-*Note: Minecraft colour coding tags can be used here, see end of docs.*
 
 `board`
 : This section defines the text on the scoreboard  
@@ -162,7 +160,6 @@ board:
  -  "play.example.com"#Some customisable text
  -  "&7%bar%"#This is a bar/line coloured gray with the code '&7'
 ```
-*Note: Minecraft colour codes can be used in any of the quote marks in the config above.*
 
 ## `messages.yml`
 
@@ -208,4 +205,4 @@ Here is an example on how to use colour codes:
 | ~~Strikethrough~~ | &m |
 
 ---
-This documentation was set up and written by [realdeadbeef](https://github.com/realdeadbeef)
+Found a problem? This documentation is open source and can be found [here](https://github.com/Nuckerr/KitPvPPlus-docs).
