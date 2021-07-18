@@ -166,9 +166,29 @@ board:
 This section won't be so well documented as there is over 100 different messages and I think it is quite self-explanatory. However, I will document some of the more important things.
 **Minecraft colour codes can be used in any of the messages, see end of docs.**
 
+## Placeholders
+These are all the placeholders supported by all the messages. Other messages may have specific placeholders. These will be listed in the comment above it
+
+|Placeholder|Description|Notes|
+|:---------:|:---------:|:---:|
+|%player%|The player's name|Can only be used where a player is applicable|
+|%bar%|Will return a line||
+|%blank%|Will return blank||
+|%left_arrow%|«||
+|%right_arrow|»||
+|%cross%|✖||
+|%warning%|⚠|
+|%health%|❤||
+|||The following placeholders require PlaceHolderAPI|
+|%kpvp_deaths%|The death count of the player|Can only be used when player is applicable|
+|%kpvp_kills%|The kill count of the player|Can only be used where a player is applicable|
+|%kpvp_exp%|The exp of the player|Can only be used where a player is applicable|
+|%kpvp_level%|The level of the player|Can only be used where a player is applicable|
+|%kpvp_bal%|The balance of the player|Can only be used where a player is applicable|
+
 `prefix`
 : This is a bit of text that prefixes every message.  
-E.g. `[KitPvP Plus] Never gonna give you up :)`
+E.g. `[KitPvP Plus] You don't have permission`
 
 ## Minecraft Colour Codes
 Here is an example on how to use colour codes:

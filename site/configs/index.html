@@ -304,6 +304,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#placeholders" class="md-nav__link">
+    Placeholders
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#minecraft-colour-codes" class="md-nav__link">
     Minecraft Colour Codes
   </a>
@@ -383,6 +390,13 @@
         <li class="md-nav__item">
   <a href="#messagesyml" class="md-nav__link">
     messages.yml
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#placeholders" class="md-nav__link">
+    Placeholders
   </a>
   
 </li>
@@ -588,9 +602,92 @@ In Spigot there are normally 3 worlds:</p>
 <h2 id="messagesyml"><code>messages.yml</code></h2>
 <p>This section won't be so well documented as there is over 100 different messages and I think it is quite self-explanatory. However, I will document some of the more important things.
 <strong>Minecraft colour codes can be used in any of the messages, see end of docs.</strong></p>
+<h2 id="placeholders">Placeholders</h2>
+<p>These are all the placeholders supported by all the messages. Other messages may have specific placeholders. These will be listed in the comment above it</p>
+<table>
+<thead>
+<tr>
+<th align="center">Placeholder</th>
+<th align="center">Description</th>
+<th align="center">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">%player%</td>
+<td align="center">The player's name</td>
+<td align="center">Can only be used where a player is applicable</td>
+</tr>
+<tr>
+<td align="center">%bar%</td>
+<td align="center">Will return a line</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">%blank%</td>
+<td align="center">Will return blank</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">%left_arrow%</td>
+<td align="center">«</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">%right_arrow</td>
+<td align="center">»</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">%cross%</td>
+<td align="center">✖</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">%warning%</td>
+<td align="center">⚠</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">%health%</td>
+<td align="center">❤</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">The following placeholders require PlaceHolderAPI</td>
+</tr>
+<tr>
+<td align="center">%kpvp_deaths%</td>
+<td align="center">The death count of the player</td>
+<td align="center">Can only be used when player is applicable</td>
+</tr>
+<tr>
+<td align="center">%kpvp_kills%</td>
+<td align="center">The kill count of the player</td>
+<td align="center">Can only be used where a player is applicable</td>
+</tr>
+<tr>
+<td align="center">%kpvp_exp%</td>
+<td align="center">The exp of the player</td>
+<td align="center">Can only be used where a player is applicable</td>
+</tr>
+<tr>
+<td align="center">%kpvp_level%</td>
+<td align="center">The level of the player</td>
+<td align="center">Can only be used where a player is applicable</td>
+</tr>
+<tr>
+<td align="center">%kpvp_bal%</td>
+<td align="center">The balance of the player</td>
+<td align="center">Can only be used where a player is applicable</td>
+</tr>
+</tbody>
+</table>
 <p><code>prefix</code>
 : This is a bit of text that prefixes every message.<br />
-E.g. <code>[KitPvP Plus] Never gonna give you up :)</code></p>
+E.g. <code>[KitPvP Plus] You don't have permission</code></p>
 <h2 id="minecraft-colour-codes">Minecraft Colour Codes</h2>
 <p>Here is an example on how to use colour codes:</p>
 <p><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /> <code>"&amp;4Red Text"</code>: This text is red as it uses the '&amp;4' colour code.</p>

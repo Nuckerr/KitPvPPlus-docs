@@ -16,14 +16,14 @@ First of all you need to add the api as a dependency to your project
 === "Maven"
     ```xml
     <repository>
-		<id>jitpack.io</id>
-		<url>https://jitpack.io</url>
-	</repository>
+        <id>ossrh</id>
+        <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
 
     <dependency>
-        <groupId>wtf.nucker.kitpvpplus</groupId>
-        <artifactId>API</artifactId>
-        <version>1.0</version>
+        <groupId>wtf.nucker</groupId>
+        <artifactId>KitPvPPlus-API</artifactId>
+        <version>0.1</version>
     </dependency>
     ```
 === "Gradle"
