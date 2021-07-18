@@ -17,7 +17,7 @@ Use markdown formatting as well as formating from mkdocs & mkdocs for material.
 
 ### Formating docs:
 - [Mkdocs](https://www.mkdocs.org/user-guide/writing-your-docs/)  
-- [Mkdocs For material](https://squidfunk.github.io/mkdocs-material/reference/)
+- [Material for mkdocs](https://squidfunk.github.io/mkdocs-material/reference/)
 
 *Any changes to the `site/` or `docs/` folder will be denied. These folders contain build outputs and any manual changes **will be** overridden upon build.*
 
