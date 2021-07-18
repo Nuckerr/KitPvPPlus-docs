@@ -50,6 +50,35 @@ public class Main extends JavaPlugin {
 }
 ```
 
+## Event Listeners
+The API usefully adds some bukkit events so you can run code when certain things happen
+
+!!! example
+    Using bukkit events:
+    ```java
+    public class MyListener implements Listner {
+
+        @EventHandler
+        public void onEvent(EventClass event) {
+            // Code..
+        }
+    }
+    ```  
+    And in your main class:
+    ```java
+    public void onEnable() {
+        // Startup logic...
+
+        getServer().getPluginManager().registerEvents(new MyListener, this);
+    }
+    ```
+
+|Event Class name|Description|
+|:--------------:|:---------:|
+|`AbilityActivateEvent`|Called when a player activates an event|
+|`KitLoadEvent`|Called when someone loads the event|
+|`StateChangeEvent`|Called when the player's state changes|
+
 
 ## Custom abilities
 Though players are limited to the ablities that come with the plugin. However you create your own!

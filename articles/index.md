@@ -8,6 +8,22 @@ If you cant find the answer your looking for, you can ask in my [support server]
 - [Commands](/configs/)
 - [Configs](/configs)
 - [Plugin API](/plugin-api)
+- [Guides:](#)
+    - [Creating kits](/guides/creating-kits/)
+    - [WorldGuard](/guides/worldguard/)
+
+## Links
+- <a href="#" id="spigot">SpigotMC</a>
+- [Github](https://github.com/Nuckerr/KitPvPPlus)
+- [JavaDocs](https://jdocs.nucker.me)
+- [Docs Github](https://github.com/Nuckerr/KitPvPPlus-docs)
+
+<script>
+    let el = document.getElementById('spigot');
+    el.onclick = () => {
+        alert('Spigot is coming soon');
+    }
+</script>
 
 ---
 Found a problem? This documentation is open source and can be found [here](https://github.com/Nuckerr/KitPvPPlus-docs).

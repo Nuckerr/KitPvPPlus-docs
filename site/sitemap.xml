@@ -21,7 +21,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wiki.nucker.me/worldguard/</loc>
+         <loc>https://wiki.nucker.me/guides/creating-kits/</loc>
+         <lastmod>2021-07-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wiki.nucker.me/guides/worldguard/</loc>
          <lastmod>2021-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
