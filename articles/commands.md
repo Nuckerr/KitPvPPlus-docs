@@ -1,5 +1,5 @@
 # Commands
-There are over 35 amount of commands in KitPvP Plus. This article goes over all the commands, their aliases and permission as well as a breif
+There are over 35 different commands in KitPvP Plus. This article goes over all commands, their aliases and permissions as well as a breif
 description.
 
 ------------
