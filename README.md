@@ -22,8 +22,7 @@ Use markdown formatting as well as formating from mkdocs & mkdocs for material.
 *Any changes to the `site/` or `docs/` folder will be denied. These folders contain build outputs and any manual changes **will be** overridden upon build.*
 
 ## Credits
-Massive thank you to [realdeadbeef](https://github.com/realdeadbeef) for helping set this
-up as well as write a large amount of it.
+Massive thank you to [realdeadbeef](https://github.com/realdeadbeef) for helping set this up as well as write a large amount of it.
 
 Thank you to all the [contributers](https://github.com/Nuckerr/KitPvPPlus-docs/graphs/contributors) who have helped make/write this documentation.
 
