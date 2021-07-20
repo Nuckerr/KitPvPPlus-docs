@@ -71,8 +71,9 @@ Sets the location for spawn.
 `/statistics`  
 View your stats.  
 **Aliases:** `/stats`  
-**Permissions:** *None*
+**Permissions:** *None*  
 **Usage**:
+
 - `/statistics [player]` (Permission: `kitpvpplus.stats.other` **if player is specified**)
 
 `/economy`  
