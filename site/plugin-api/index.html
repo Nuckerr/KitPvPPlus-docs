@@ -598,24 +598,16 @@ use the internal plugin to access them in the mean time</p>
 <p>First of all you need to add the api as a dependency to your project  </p>
 <h3 id="dependency">Dependency</h3>
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Maven</label><div class="tabbed-content">
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">&lt;repository&gt;</span>
-    <span class="nt">&lt;id&gt;</span>ossrh<span class="nt">&lt;/id&gt;</span>
-    <span class="nt">&lt;url&gt;</span>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/<span class="nt">&lt;/url&gt;</span>
-<span class="nt">&lt;/repository&gt;</span>
-
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!--- No repo needed! ---&gt;</span>
 <span class="nt">&lt;dependency&gt;</span>
     <span class="nt">&lt;groupId&gt;</span>wtf.nucker<span class="nt">&lt;/groupId&gt;</span>
     <span class="nt">&lt;artifactId&gt;</span>KitPvPPlus-API<span class="nt">&lt;/artifactId&gt;</span>
-    <span class="nt">&lt;version&gt;</span>0.1<span class="nt">&lt;/version&gt;</span>
+    <span class="nt">&lt;version&gt;</span>0.2<span class="nt">&lt;/version&gt;</span>
 <span class="nt">&lt;/dependency&gt;</span>
 </code></pre></div>
 </td></tr></table>
@@ -623,9 +615,17 @@ use the internal plugin to access them in the mean time</p>
 <input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Gradle</label><div class="tabbed-content">
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>maven { url &#39;https://jitpack.io&#39; }
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>repositories {
+    mavenCentral()
+}
 
-compile group: &#39;wtf.nucker.kitpvpplus&#39;, name: &#39;API&#39;, version:&#39;1.0&#39;
+dependencies {
+    compile &quot;wtf.nucker:KitPvPPlus-API:0.2&quot;
+}
 </code></pre></div>
 </td></tr></table>
 </div>

@@ -15,22 +15,22 @@ First of all you need to add the api as a dependency to your project
 ### Dependency
 === "Maven"
     ```xml
-    <repository>
-        <id>ossrh</id>
-        <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-    </repository>
-
+    <!--- No repo needed! --->
     <dependency>
         <groupId>wtf.nucker</groupId>
         <artifactId>KitPvPPlus-API</artifactId>
-        <version>0.1</version>
+        <version>0.2</version>
     </dependency>
     ```
 === "Gradle"
     ```gradle
-    maven { url 'https://jitpack.io' }
+    repositories {
+        mavenCentral()
+    }
 
-    compile group: 'wtf.nucker.kitpvpplus', name: 'API', version:'1.0'
+    dependencies {
+        compile "wtf.nucker:KitPvPPlus-API:0.2"
+    }
     ```
 
 ### API Access
