@@ -19,7 +19,7 @@ First of all you need to add the api as a dependency to your project
     <dependency>
         <groupId>wtf.nucker</groupId>
         <artifactId>KitPvPPlus-API</artifactId>
-        <version>0.2</version>
+        <version>0.2.1</version>
     </dependency>
     ```
 === "Gradle"
@@ -29,7 +29,7 @@ First of all you need to add the api as a dependency to your project
     }
 
     dependencies {
-        compile "wtf.nucker:KitPvPPlus-API:0.2"
+        compile "wtf.nucker:KitPvPPlus-API:0.2.1"
     }
     ```
 
