@@ -1,5 +1,5 @@
 # Plugin API
-The api allows you to intergrate your plugin with KitPvP Plus.
+The api allows you to integrate your plugin with KitPvP Plus.
 
 !!! note
     Certain parts of the plugin are not included in the api.
@@ -19,18 +19,18 @@ First of all you need to add the api as a dependency to your project
     <dependency>
         <groupId>wtf.nucker</groupId>
         <artifactId>KitPvPPlus-API</artifactId>
-        <version>0.2.2</version>
+        <version>0.3.0</version>
         <scope>provided</scope>
     </dependency>
     ```
 === "Gradle"
     ```gradle
     repositories {
-        mavenCentral()
+        mavenCentral()      
     }
 
     dependencies {
-        compileOnly "wtf.nucker:KitPvPPlus-API:0.2.2"
+        compileOnly "wtf.nucker:KitPvPPlus-API:0.3.0"
     }
     ```
 
@@ -49,6 +49,29 @@ public class Main extends JavaPlugin {
         return this.api;
     }
 }
+```
+
+## Player Data
+You can access the data stored about players, such as kills, exp etcetera through a useful interface. To access you can do the following:  
+```java
+    public void onEnable() {
+        // Start up logic
+
+        KitPvPPlusAPI api = KitPvPPlusAPI.getInstance();
+        PlayerData data = api.getPlayerData(UUID.fromString("68f34c4f-d00c-40fb-858d-b5a876601072"));
+    }
+```  
+There, as simple as that! You can use your IDE's auto-suggest features to see what you can access. For example:
+```java
+    public void onEnable() {
+        // Start up logic
+
+        KitPvPPlusAPI api = KitPvPPlusAPI.getInstance();
+        PlayerData data = api.getPlayerData(UUID.fromString("68f34c4f-d00c-40fb-858d-b5a876601072"));
+
+        int kills = data.getKills();
+        data.setState(PlayerState.SPAWN); 
+    }
 ```
 
 ## Event Listeners
@@ -182,7 +205,7 @@ You can actually access the locations used in KitPvPPlus such as spawn and the a
             player.teleport(api.getLocations().getSpawn()); // Teleport them to the spawn location
         });
     }
-```
+    ```
 
 ## Config
 You can access all data from the config files through the api

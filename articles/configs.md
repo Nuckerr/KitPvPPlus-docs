@@ -93,7 +93,7 @@ tnt-shooter: #This is the name of the ability, it does not show up in-game.
      -  "&7Just right click"
 ```
 !!! note
-    Minecraft colour codes can be used in the lore quote marks in the config above, see end of docs.
+    Minecraft color codes can be used in the lore quote marks in the config above, see end of docs.
 
 `scoreboard`
 : This section is where the scoreboard settings are defined.
@@ -129,14 +129,14 @@ disabled-worlds:
 **Syntax:**
 ```yaml
 board:
- -  "&7%bar%"#This is a bar/line coloured gray with the code '&7'
- -  "&7Hello there %player%"#This says 'Hello there' and then the players username, defined by '%player%' in the colour gray, indicated by '&7'.
+ -  "&7%bar%"#This is a bar/line colored gray with the code '&7'
+ -  "&7Hello there %player%"#This says 'Hello there' and then the players username, defined by '%player%' in the color gray, indicated by '&7'.
  -  ""#This is just a blank space created by some empty quote marks - You could put some text in here.
- -  "&7Kills: &b%kills%"#This says 'Kills:' in the colour gray, indicated by the colour code '&7' followed by the number of kills, indicated by '%kills%' in the colour aqua, indicated by '&b'.
- -  "&7Deaths: &b%deaths%"#This says 'Deaths:' in the colour gray, indicated by the colour code '&7' followed by the number of deaths, indicated by '%deaths%' in the colour aqua, indicated by '&b'.
+ -  "&7Kills: &b%kills%"#This says 'Kills:' in the color gray, indicated by the color code '&7' followed by the number of kills, indicated by '%kills%' in the color aqua, indicated by '&b'.
+ -  "&7Deaths: &b%deaths%"#This says 'Deaths:' in the color gray, indicated by the color code '&7' followed by the number of deaths, indicated by '%deaths%' in the color aqua, indicated by '&b'.
  -  ""#This is just a blank space created by some empty quote marks - You could put some text in here.
  -  "play.example.com"#Some customisable text
- -  "&7%bar%"#This is a bar/line coloured gray with the code '&7'
+ -  "&7%bar%"#This is a bar/line colored gray with the code '&7'
 ```
 
 `arena`
@@ -151,20 +151,60 @@ board:
 **Syntax:**
 ```yaml
 board:
- -  "&7%bar%"#This is a bar/line coloured gray with the code '&7'
- -  "&7Hello there %player%"#This says 'Hello there' and then the players username, defined by '%player%' in the colour gray, indicated by '&7'.
+ -  "&7%bar%"#This is a bar/line colored gray with the code '&7'
+ -  "&7Hello there %player%"#This says 'Hello there' and then the players username, defined by '%player%' in the color gray, indicated by '&7'.
  -  ""#This is just a blank space created by some empty quote marks - You could put some text in here.
- -  "&7Kills: &b%kills%"#This says 'Kills:' in the colour gray, indicated by the colour code '&7' followed by the number of kills, indicated by '%kills%' in the colour aqua, indicated by '&b'.
- -  "&7Deaths: &b%deaths%"#This says 'Deaths:' in the colour gray, indicated by the colour code '&7' followed by the number of deaths, indicated by '%deaths%' in the colour aqua, indicated by '&b'.
+ -  "&7Kills: &b%kills%"#This says 'Kills:' in the color gray, indicated by the color code '&7' followed by the number of kills, indicated by '%kills%' in the color aqua, indicated by '&b'.
+ -  "&7Deaths: &b%deaths%"#This says 'Deaths:' in the color gray, indicated by the color code '&7' followed by the number of deaths, indicated by '%deaths%' in the color aqua, indicated by '&b'.
  -  ""#This is just a blank space created by some empty quote marks - You could put some text in here.
  -  "play.example.com"#Some customisable text
- -  "&7%bar%"#This is a bar/line coloured gray with the code '&7'
+ -  "&7%bar%"#This is a bar/line colored gray with the code '&7'
 ```
 
 ## `messages.yml`
 
 This section won't be so well documented as there is over 100 different messages and I think it is quite self-explanatory. However, I will document some of the more important things.
-**Minecraft colour codes can be used in any of the messages, see end of docs.**
+
+|Message|Description|Placeholders|Notes|
+|:-----:|:---------:|:----------:|:---:|
+|**General**||||
+|prefix|A string of text used at the beginning of each message||Leave blank for no prefix|
+|exp-given|Sent when a player receives exp|%amount% - The amount of exp||
+|stats-message|The /stats message|%deaths%, %kills%, %exp%, %level%, %killstreak%, %kdr%, %top_killstreak%|Self explanatory placeholders. **This is a string list**|
+|spawn-message|Message sent when /spawn is run|||
+|arena-message|Message sent when /play is run|||
+|permission-message|Message sent when a player dosent have permission to do something|||
+|console-command|Sent when the command is not available for the console|||
+|no-last-page|Sent when there is no previous page on a paginated menu|||
+|no-next-page|Sent when there is no next page on a paginated menu|||
+|**Events**||||
+|death|Sent when a player dies to another player|%killer% - Who killed them||
+|killed|Sent when you kill a player|%victim% - The person you killed||
+|broadcast-death|Broadcast to the server when someone gets killed|%killer%, %victim%|Leave blank for no broadcast|
+|arrow-hit|Sent when a player hits someone with a bow/arrow|%victim% - who they hit||
+|**Admin**||||
+|spawn-set|Message sent when /setspawn is ran|||
+|arena-set|Message sent when /setarena is ran|||
+|plugin-reloaded|Sent when you reload the plugin|||
+|**Economy**||||
+|balance-message|/bal message|%balance% - Player's balance||
+|other-balance-message|/balother message|%balance% - the targets balance, %target%||
+|balance-set|When admin sets player's balance|%target%, %balance%||
+|balance-reset|When admin resets a player's balance|%target%||
+|balance-given|When admin gives X amount to player|%target%, %givenAmount%||
+|pay-message|When you send a player money successfully|%targe%, %amount%||
+|insufficient-balance|When a player dosent have a high enough balance||
+|paid-message|When you get paid by another player|%payer% - Who paid you, %amount%||
+|sent-to-self|When a player tries to send money to themselves|||
+|**Abilities**|||
+|cooldown-message|Sent when a player tries to use a ability on cooldown|||
+|no-longer-on-cooldown|Sent when a ability comes off cooldown|%name% - ability name||
+|sonic-activation-message|Sent when sonic ability is activated|||
+|fireman-activation-message|Sent when fireman ability is activated||| 
+
+**Though there is more, the rest is fairly self explanatory**
+
+---
 
 ## Placeholders
 These are all the placeholders supported by all the messages. Other messages may have specific placeholders. These will be listed in the comment above it
@@ -178,7 +218,7 @@ These are all the placeholders supported by all the messages. Other messages may
 |%right_arrow|»||
 |%cross%|✖||
 |%warning%|⚠|
-|%health%|❤||
+|%heart%|❤||
 |||The following placeholders require PlaceHolderAPI|
 |%kpvp_deaths%|The death count of the player|Can only be used when player is applicable|
 |%kpvp_kills%|The kill count of the player|Can only be used where a player is applicable|
@@ -190,18 +230,18 @@ These are all the placeholders supported by all the messages. Other messages may
 : This is a bit of text that prefixes every message.  
 E.g. `[KitPvP Plus] You don't have permission`
 
-## Minecraft Colour Codes
-Here is an example on how to use colour codes:
+## Minecraft color Codes
+Here is an example on how to use color codes:
 
-:white_check_mark: `"&4Red Text"`: This text is red as it uses the '&4' colour code.
+:white_check_mark: `"&4Red Text"`: This text is red as it uses the '&4' color code.
 
-:white_check_mark: `"&4&nRed Underlined text"`: This text is red and underlined as it uses the '&4' colour code to make it red and the '&n' formatting code to underline.
+:white_check_mark: `"&4&nRed Underlined text"`: This text is red and underlined as it uses the '&4' color code to make it red and the '&n' formatting code to underline.
 
-:white_check_mark: `"&cRed &aGreen &9Blue"`: You can colour code different words by placing colour codes next to them.
+:white_check_mark: `"&cRed &aGreen &9Blue"`: You can color code different words by placing color codes next to them.
 
-:x: `"Red&c Green&a Blue&9"`: This would highlight the text in front of the colour code so "Red" wouldn't be coloured and "Green" would be highlighted red and so on and so forth.
+:x: `"Red&c Green&a Blue&9"`: This would highlight the text in front of the color code so "Red" wouldn't be colored and "Green" would be highlighted red and so on and so forth.
 
-| Colour | Code |
+| color | Code |
 |:--:|:--:|
 | Dark Red | &4 |
 | Red | &c |
