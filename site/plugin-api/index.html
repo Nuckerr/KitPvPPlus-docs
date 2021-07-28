@@ -332,6 +332,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#player-data" class="md-nav__link">
+    Player Data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#event-listeners" class="md-nav__link">
     Event Listeners
   </a>
@@ -408,18 +415,87 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../signs/" class="md-nav__link">
+        Signs
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
       
-      <label class="md-nav__link" for="__nav_5">
+      <label class="md-nav__link" for="__nav_6">
+        Config File Defaults
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Config File Defaults" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Config File Defaults
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Config%20File%20Defaults/config.yml/" class="md-nav__link">
+        Config.yml
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Config%20File%20Defaults/messages.yml/" class="md-nav__link">
+        Messages.yml
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      <label class="md-nav__link" for="__nav_7">
         Guides
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Guides" data-md-level="1">
-        <label class="md-nav__title" for="__nav_5">
+        <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
           Guides
         </label>
@@ -508,6 +584,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#player-data" class="md-nav__link">
+    Player Data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#event-listeners" class="md-nav__link">
     Event Listeners
   </a>
@@ -583,7 +666,7 @@
                 
                 
                 <h1 id="plugin-api">Plugin API</h1>
-<p>The api allows you to intergrate your plugin with KitPvP Plus.</p>
+<p>The api allows you to integrate your plugin with KitPvP Plus.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Certain parts of the plugin are not included in the api.
@@ -603,11 +686,13 @@ use the internal plugin to access them in the mean time</p>
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!--- No repo needed! ---&gt;</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!--- No repo needed! ---&gt;</span>
 <span class="nt">&lt;dependency&gt;</span>
     <span class="nt">&lt;groupId&gt;</span>wtf.nucker<span class="nt">&lt;/groupId&gt;</span>
     <span class="nt">&lt;artifactId&gt;</span>KitPvPPlus-API<span class="nt">&lt;/artifactId&gt;</span>
-    <span class="nt">&lt;version&gt;</span>0.2<span class="nt">&lt;/version&gt;</span>
+    <span class="nt">&lt;version&gt;</span>0.3.0<span class="nt">&lt;/version&gt;</span>
+    <span class="nt">&lt;scope&gt;</span>provided<span class="nt">&lt;/scope&gt;</span>
 <span class="nt">&lt;/dependency&gt;</span>
 </code></pre></div>
 </td></tr></table>
@@ -620,11 +705,11 @@ use the internal plugin to access them in the mean time</p>
 <span class="normal">5</span>
 <span class="normal">6</span>
 <span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>repositories {
-    mavenCentral()
+    mavenCentral()      
 }
 
 dependencies {
-    compile &quot;wtf.nucker:KitPvPPlus-API:0.2&quot;
+    compileOnly &quot;wtf.nucker:KitPvPPlus-API:0.3.0&quot;
 }
 </code></pre></div>
 </td></tr></table>
@@ -655,6 +740,41 @@ dependencies {
         <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="na">api</span><span class="p">;</span>
     <span class="p">}</span>
 <span class="p">}</span>
+</code></pre></div>
+</td></tr></table></p>
+<h2 id="player-data">Player Data</h2>
+<p>You can access the data stored about players, such as kills, exp etcetera through a useful interface. To access you can do the following:<br />
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onEnable</span><span class="p">()</span> <span class="p">{</span>
+        <span class="c1">// Start up logic</span>
+
+        <span class="n">KitPvPPlusAPI</span> <span class="n">api</span> <span class="o">=</span> <span class="n">KitPvPPlusAPI</span><span class="p">.</span><span class="na">getInstance</span><span class="p">();</span>
+        <span class="n">PlayerData</span> <span class="n">data</span> <span class="o">=</span> <span class="n">api</span><span class="p">.</span><span class="na">getPlayerData</span><span class="p">(</span><span class="n">UUID</span><span class="p">.</span><span class="na">fromString</span><span class="p">(</span><span class="s">&quot;68f34c4f-d00c-40fb-858d-b5a876601072&quot;</span><span class="p">));</span>
+    <span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+There, as simple as that! You can use your IDE's auto-suggest features to see what you can access. For example:
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onEnable</span><span class="p">()</span> <span class="p">{</span>
+        <span class="c1">// Start up logic</span>
+
+        <span class="n">KitPvPPlusAPI</span> <span class="n">api</span> <span class="o">=</span> <span class="n">KitPvPPlusAPI</span><span class="p">.</span><span class="na">getInstance</span><span class="p">();</span>
+        <span class="n">PlayerData</span> <span class="n">data</span> <span class="o">=</span> <span class="n">api</span><span class="p">.</span><span class="na">getPlayerData</span><span class="p">(</span><span class="n">UUID</span><span class="p">.</span><span class="na">fromString</span><span class="p">(</span><span class="s">&quot;68f34c4f-d00c-40fb-858d-b5a876601072&quot;</span><span class="p">));</span>
+
+        <span class="kt">int</span> <span class="n">kills</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="na">getKills</span><span class="p">();</span>
+        <span class="n">data</span><span class="p">.</span><span class="na">setState</span><span class="p">(</span><span class="n">PlayerState</span><span class="p">.</span><span class="na">SPAWN</span><span class="p">);</span> 
+    <span class="p">}</span>
 </code></pre></div>
 </td></tr></table></p>
 <h2 id="event-listeners">Event Listeners</h2>
@@ -828,20 +948,24 @@ This will return 2 hours in seconds!</p>
 <p>You can actually access the locations used in KitPvPPlus such as spawn and the arena!</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<p>```java
-public void onEnable() {
-    // On enable logic...
-    KitPvPPlusAPI api = KitPvPPlusAPI.getInstance(); // Get instance of api instance</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>getServer().getOnlinePlayers().forEach(player -&gt; { // Get online players and loop through
-    player.teleport(api.getLocations().getSpawn()); // Teleport them to the spawn location
-});
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">public</span> <span class="kt">void</span> <span class="nf">onEnable</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// On enable logic...</span>
+    <span class="n">KitPvPPlusAPI</span> <span class="n">api</span> <span class="o">=</span> <span class="n">KitPvPPlusAPI</span><span class="p">.</span><span class="na">getInstance</span><span class="p">();</span> <span class="c1">// Get instance of api instance</span>
+
+    <span class="n">getServer</span><span class="p">().</span><span class="na">getOnlinePlayers</span><span class="p">().</span><span class="na">forEach</span><span class="p">(</span><span class="n">player</span> <span class="o">-&gt;</span> <span class="p">{</span> <span class="c1">// Get online players and loop through</span>
+        <span class="n">player</span><span class="p">.</span><span class="na">teleport</span><span class="p">(</span><span class="n">api</span><span class="p">.</span><span class="na">getLocations</span><span class="p">().</span><span class="na">getSpawn</span><span class="p">());</span> <span class="c1">// Teleport them to the spawn location</span>
+    <span class="p">});</span>
+<span class="p">}</span>
 </code></pre></div>
 </td></tr></table>
-<p>}</p>
 </div>
-<p>```</p>
 <h2 id="config">Config</h2>
 <p>You can access all data from the config files through the api</p>
 <div class="admonition danger">
@@ -923,13 +1047,13 @@ the config instance, there is no way of accessing the raw config file</p>
       
       
         
-        <a href="../guides/creating-kits/" class="md-footer__link md-footer__link--next" aria-label="Next: Creating kits" rel="next">
+        <a href="../signs/" class="md-footer__link md-footer__link--next" aria-label="Next: Signs" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Creating kits
+              Signs
             </div>
           </div>
           <div class="md-footer__button md-icon">
