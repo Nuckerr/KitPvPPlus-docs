@@ -5,7 +5,7 @@ If you cant find the answer your looking for, you can ask in my [support server]
 
 
 ## Pages
-- [Commands](/configs/)
+- [Commands](/commands/)
 - [Configs](/configs)
 - [Plugin API](/plugin-api)
 - [Guides:](#)
