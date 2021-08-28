@@ -215,7 +215,7 @@ These are all the placeholders supported by all the messages. Other messages may
 |%bar%|Will return a line||
 |%blank%|Will return blank||
 |%left_arrow%|«||
-|%right_arrow|»||
+|%right_arrow%|»||
 |%cross%|✖||
 |%warning%|⚠|
 |%heart%|❤||
