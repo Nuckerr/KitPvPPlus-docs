@@ -6,7 +6,7 @@ for the plugin api.
 
 ## Links:
 - [Wiki](https://wiki.nucker.me)  
-- [Javadocs](https://jdocs.nucker.me)
+- [Javadocs](https://wiki.nucker.me/javadocs/)
 
 
 ## Contributing
@@ -19,7 +19,7 @@ Use markdown formatting as well as formating from mkdocs & mkdocs for material.
 - [Mkdocs](https://www.mkdocs.org/user-guide/writing-your-docs/)  
 - [Material for mkdocs](https://squidfunk.github.io/mkdocs-material/reference/)
 
-*Any changes to the `site/` or `docs/` folder will be denied. These folders contain build outputs and any manual changes **will be** overridden upon build.*
+*Any changes to the `site/` folder will be denied. This folder contains the build outputs and any manual changes **will be** overridden upon build.*
 
 ## Credits
 Massive thank you to [realdeadbeef](https://github.com/realdeadbeef) for helping set this up as well as write a large amount of it.

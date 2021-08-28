@@ -15,7 +15,7 @@ If you cant find the answer your looking for, you can ask in my [support server]
 ## Links
 - <a href="#" id="spigot">SpigotMC</a>
 - [Github](https://github.com/Nuckerr/KitPvPPlus)
-- [JavaDocs](https://jdocs.nucker.me)
+- [JavaDocs](https://wiki.nucker.me/javadocs/)
 - [Docs Github](https://github.com/Nuckerr/KitPvPPlus-docs)
 
 <script>

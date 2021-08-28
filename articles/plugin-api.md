@@ -7,7 +7,7 @@ The api allows you to integrate your plugin with KitPvP Plus.
     use the internal plugin to access them in the mean time
 
 !!! tip
-    All of the methods and classes have taliored descriptions (Javadocs). You can use IntelliSense the view them inside your ide or navigate it's [webpage](https://jdocs.nucker.me) to look at them
+    All of the methods and classes have taliored descriptions (Javadocs). You can use IntelliSense the view them inside your ide or navigate it's [webpage](https://wiki.nucker.me/javadocs/) to look at them
 
 ## Setup
 First of all you need to add the api as a dependency to your project  
