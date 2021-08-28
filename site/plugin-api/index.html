@@ -394,6 +394,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#leaderboards" class="md-nav__link">
+    Leaderboards
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#coming-soon" class="md-nav__link">
     Coming soon
   </a>
@@ -437,13 +444,13 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
       
       <label class="md-nav__link" for="__nav_6">
-        Config File Defaults
+        Default Config Files
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Config File Defaults" data-md-level="1">
+      <nav class="md-nav" aria-label="Default Config Files" data-md-level="1">
         <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
-          Config File Defaults
+          Default Config Files
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -452,8 +459,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../Config%20File%20Defaults/config.yml/" class="md-nav__link">
-        Config.yml
+      <a href="../Default%20Config%20Files/config.yml/" class="md-nav__link">
+        ___  __    ___  _________        ________  ___      ___ ________        ________  ___       ___  ___  ________
       </a>
     </li>
   
@@ -464,8 +471,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../Config%20File%20Defaults/messages.yml/" class="md-nav__link">
-        Messages.yml
+      <a href="../Default%20Config%20Files/messages.yml/" class="md-nav__link">
+        ___  __    ___  _________        ________  ___      ___ ________        ________  ___       ___  ___  ________
       </a>
     </li>
   
@@ -646,6 +653,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#leaderboards" class="md-nav__link">
+    Leaderboards
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#coming-soon" class="md-nav__link">
     Coming soon
   </a>
@@ -691,7 +705,7 @@ use the internal plugin to access them in the mean time</p>
 <span class="nt">&lt;dependency&gt;</span>
     <span class="nt">&lt;groupId&gt;</span>wtf.nucker<span class="nt">&lt;/groupId&gt;</span>
     <span class="nt">&lt;artifactId&gt;</span>KitPvPPlus-API<span class="nt">&lt;/artifactId&gt;</span>
-    <span class="nt">&lt;version&gt;</span>0.3.1<span class="nt">&lt;/version&gt;</span>
+    <span class="nt">&lt;version&gt;</span>1.0.0<span class="nt">&lt;/version&gt;</span>
     <span class="nt">&lt;scope&gt;</span>provided<span class="nt">&lt;/scope&gt;</span>
 <span class="nt">&lt;/dependency&gt;</span>
 </code></pre></div>
@@ -709,7 +723,7 @@ use the internal plugin to access them in the mean time</p>
 }
 
 dependencies {
-    compileOnly &quot;wtf.nucker:KitPvPPlus-API:0.3.1&quot;
+    compileOnly &quot;wtf.nucker:KitPvPPlus-API:1.0.0&quot;
 }
 </code></pre></div>
 </td></tr></table>
@@ -986,6 +1000,51 @@ the config instance, there is no way of accessing the raw config file</p>
 </td></tr></table>
 </div>
 <p>Getting data from the other configs is pretty similar</p>
+<h2 id="leaderboards">Leaderboards</h2>
+<p>You can access information about leaderboards so you can intergrate them into your plugin and add features.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Getting the leaderboard manager
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">public</span> <span class="kt">void</span> <span class="nf">onEnable</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">KitPvPPlusAPI</span> <span class="n">api</span> <span class="o">=</span> <span class="n">KitPvPPlusAPI</span><span class="p">.</span><span class="na">getInstance</span><span class="p">();</span> <span class="c1">// Get instance of the API</span>
+    <span class="n">LeaderboardManager</span> <span class="n">manager</span> <span class="o">=</span> <span class="n">api</span><span class="p">.</span><span class="na">getLeaderboardManager</span><span class="p">();</span> <span class="c1">// Get the leaderboard manager</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table></p>
+</div>
+<p>We can now get, for example, the deaths leaderboard:
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onEnable</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">KitPvPPlusAPI</span> <span class="n">api</span> <span class="o">=</span> <span class="n">KitPvPPlusAPI</span><span class="p">.</span><span class="na">getInstance</span><span class="p">();</span> <span class="c1">// Get instance of the API</span>
+        <span class="n">LeaderboardManager</span> <span class="n">manager</span>  <span class="o">=</span> <span class="n">api</span><span class="p">.</span><span class="na">getLeaderboardManager</span><span class="p">();</span> <span class="c1">// Get the leaderboard manager</span>
+        <span class="n">Leaderboard</span> <span class="n">lb</span> <span class="o">=</span> <span class="n">manager</span><span class="p">.</span><span class="na">getDeathsLeaderboard</span><span class="p">();</span>
+    <span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+Here are some examples of how we can get information:
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onEnable</span><span class="p">()</span> <span class="p">{</span>
+        <span class="p">...</span> <span class="c1">// See above for code</span>
+
+        <span class="n">List</span><span class="o">&lt;</span><span class="n">LeaderboardValue</span><span class="o">&gt;</span> <span class="n">topTen</span> <span class="o">=</span> <span class="n">lb</span><span class="p">.</span><span class="na">getTop</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span> <span class="c1">// Returns the top 10 spots on the leaderboard</span>
+
+        <span class="n">Player</span> <span class="n">examplePlayer</span> <span class="o">=</span> <span class="n">Bukkit</span><span class="p">.</span><span class="na">getOfflinePlayer</span><span class="p">(</span><span class="s">&quot;Notch&quot;</span><span class="p">);</span>
+        <span class="kt">int</span> <span class="n">place</span> <span class="o">=</span> <span class="n">lb</span><span class="p">.</span><span class="na">getPlace</span><span class="p">(</span><span class="n">examplePlayer</span><span class="p">);</span> <span class="c1">// Returns notch&#39;s place in the leaderboard.</span>
+    <span class="p">}</span>
+</code></pre></div>
+</td></tr></table></p>
 <h2 id="coming-soon">Coming soon</h2>
 <table>
 <thead>

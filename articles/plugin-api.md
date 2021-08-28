@@ -19,7 +19,7 @@ First of all you need to add the api as a dependency to your project
     <dependency>
         <groupId>wtf.nucker</groupId>
         <artifactId>KitPvPPlus-API</artifactId>
-        <version>0.3.1</version>
+        <version>1.0.0</version>
         <scope>provided</scope>
     </dependency>
     ```
@@ -30,7 +30,7 @@ First of all you need to add the api as a dependency to your project
     }
 
     dependencies {
-        compileOnly "wtf.nucker:KitPvPPlus-API:0.3.1"
+        compileOnly "wtf.nucker:KitPvPPlus-API:1.0.0"
     }
     ```
 
@@ -222,6 +222,37 @@ You can access all data from the config files through the api
     }
     ```
 Getting data from the other configs is pretty similar
+
+## Leaderboards
+You can access information about leaderboards so you can intergrate them into your plugin and add features.
+
+!!! example
+    Getting the leaderboard manager
+    ```java
+    public void onEnable() {
+        KitPvPPlusAPI api = KitPvPPlusAPI.getInstance(); // Get instance of the API
+        LeaderboardManager manager = api.getLeaderboardManager(); // Get the leaderboard manager
+    }
+    ```
+We can now get, for example, the deaths leaderboard:
+```java
+    public void onEnable() {
+        KitPvPPlusAPI api = KitPvPPlusAPI.getInstance(); // Get instance of the API
+        LeaderboardManager manager  = api.getLeaderboardManager(); // Get the leaderboard manager
+        Leaderboard lb = manager.getDeathsLeaderboard();
+    }
+```
+Here are some examples of how we can get information:
+```java
+    public void onEnable() {
+        ... // See above for code
+
+        List<LeaderboardValue> topTen = lb.getTop(10); // Returns the top 10 spots on the leaderboard
+
+        Player examplePlayer = Bukkit.getOfflinePlayer("Notch");
+        int place = lb.getPlace(examplePlayer); // Returns notch's place in the leaderboard.
+    }
+```
 
 ## Coming soon
 |Feature|ETA|

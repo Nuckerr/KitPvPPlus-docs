@@ -1,4 +1,3 @@
-```yaml
 # ___  __    ___  _________        ________  ___      ___ ________        ________  ___       ___  ___  ________
 #|\  \|\  \ |\  \|\___   ___\     |\   __  \|\  \    /  /|\   __  \      |\   __  \|\  \     |\  \|\  \|\   ____\
 #\ \  \/  /|\ \  \|___ \  \_|     \ \  \|\  \ \  \  /  / | \  \|\  \     \ \  \|\  \ \  \    \ \  \\\  \ \  \___|_
@@ -76,6 +75,14 @@ kits:
   kit-menu-opening: "&aOpening menu"
   kit-purchase-canceled: "&cPurchase canceled"
   kit-purchase: "&aYou purchased %kit%"
+leaderboards:
+  death-leaderboad: "&e&lDeath leaderboard"
+  kills-leaderboad: "&e&lKills leaderboard"
+  exp-leaderboad: "&e&lExp leaderboard"
+  balance-leaderboad: "&e&lBalance leaderboard"
+  killstreak-leaderboad: "&e&lKillstreak leaderboard"
+  kdr-leaderboad: "&e&lKDR leaderboard"
+  level-leaderboad: "&e&lLevel leaderboard"
 help-commands:
   kit-command:
     - "&9%bar%"
@@ -128,7 +135,3 @@ sign-contents:
   kit-gui-sign:
     - "&a[Right click]"
     - "&0To open the kit GUI"
-```
-
----
-Found a problem? This documentation is open source and can be found [here](https://github.com/Nuckerr/KitPvPPlus-docs).

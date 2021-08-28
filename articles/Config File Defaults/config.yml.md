@@ -1,4 +1,3 @@
-```yaml
 # ___  __    ___  _________        ________  ___      ___ ________        ________  ___       ___  ___  ________
 #|\  \|\  \ |\  \|\___   ___\     |\   __  \|\  \    /  /|\   __  \      |\   __  \|\  \     |\  \|\  \|\   ____\
 #\ \  \/  /|\ \  \|___ \  \_|     \ \  \|\  \ \  \  /  / | \  \|\  \     \ \  \|\  \ \  \    \ \  \\\  \ \  \___|_
@@ -9,6 +8,13 @@
 #                                                                                                         \|_________|
 # KitPvP Plus
 # config.yml
+
+update:
+  alert: true
+  # Coming soon
+  auto-download: false
+  # In minutes
+  re-check-alert: 10
 
 data-storage:
   # mysql, mongo, flat
@@ -94,7 +100,3 @@ scoreboard:
       - ""
       - "play.example.com"
       - "&7%bar%"
-```
-
----
-Found a problem? This documentation is open source and can be found [here](https://github.com/Nuckerr/KitPvPPlus-docs).

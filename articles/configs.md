@@ -202,7 +202,9 @@ This section won't be so well documented as there is over 100 different messages
 |sonic-activation-message|Sent when sonic ability is activated|||
 |fireman-activation-message|Sent when fireman ability is activated||| 
 
-**Though there is more, the rest is fairly self explanatory**
+**Though there is more, the rest is fairly self explanatory**  
+!!! note
+    The leaderboards part is the displayname of the leaderboard
 
 ---
 
