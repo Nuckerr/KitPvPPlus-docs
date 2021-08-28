@@ -1,0 +1,1213 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A customizable KitPvP core for 1.8 - 1.17">
+      
+      
+      
+        <meta name="author" content="Nucker development">
+      
+      
+        <link rel="canonical" href="https://wiki.nucker.me/configs/">
+      
+      <link rel="icon" href="../assets/icon.png">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.10">
+    
+    
+      
+        <title>Configs - KitPvP Plus Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.1fe995fd.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.f1a3b89f.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="pink">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#configs" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="KitPvP Plus Documentation" class="md-header__button md-logo" aria-label="KitPvP Plus Documentation" data-md-component="logo">
+      
+  <img src="../assets/icon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            KitPvP Plus Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Configs
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/Nuckerr/KitPvPPlus" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Nuckerr/KitPvPPlus
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="KitPvP Plus Documentation" class="md-nav__button md-logo" aria-label="KitPvP Plus Documentation" data-md-component="logo">
+      
+  <img src="../assets/icon.png" alt="logo">
+
+    </a>
+    KitPvP Plus Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/Nuckerr/KitPvPPlus" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Nuckerr/KitPvPPlus
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        KitPvP Plus Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../commands/" class="md-nav__link">
+        Commands
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Configs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Configs
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configyml" class="md-nav__link">
+    config.yml
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#messagesyml" class="md-nav__link">
+    messages.yml
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#placeholders" class="md-nav__link">
+    Placeholders
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#minecraft-color-codes" class="md-nav__link">
+    Minecraft color Codes
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin-api/" class="md-nav__link">
+        Plugin API
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../signs/" class="md-nav__link">
+        Signs
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      <label class="md-nav__link" for="__nav_6">
+        Config File Defaults
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Config File Defaults" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Config File Defaults
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Config%20File%20Defaults/config.yml/" class="md-nav__link">
+        Config.yml
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Config%20File%20Defaults/messages.yml/" class="md-nav__link">
+        Messages.yml
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      <label class="md-nav__link" for="__nav_7">
+        Guides
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/creating-kits/" class="md-nav__link">
+        Creating kits
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/worldguard/" class="md-nav__link">
+        Worldguard
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configyml" class="md-nav__link">
+    config.yml
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#messagesyml" class="md-nav__link">
+    messages.yml
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#placeholders" class="md-nav__link">
+    Placeholders
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#minecraft-color-codes" class="md-nav__link">
+    Minecraft color Codes
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="configs">Configs</h1>
+<p>This section of documentation was written by <a href="https://github.com/realdeadbeef">realdeadbeef</a></p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>This article covers the <code>config.yml</code> and the <code>messages.yml</code>. If you touch any of the other config files, <strong>this is at</strong>
+<strong>your own risk!</strong>. These files contain data and if it is broken, all that data will be lost, rendering major parts of your
+server as broken.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Before reloading/restarting the plugin, backup your config files so that if anything goes wrong, you still have them. You can
+also use <a href="http://www.yamllint.com/">yaml linter</a> to see if there are any syntax errors in your config</p>
+</div>
+<h2 id="configyml"><code>config.yml</code></h2>
+<p><code>data-storage</code>
+: This section of the file defines how data is stored.</p>
+<p><code>type</code>
+: Configures the storage type.</p>
+<ul>
+<li>If you are using a MySQL database, this should be set to <code>mysql</code>.</li>
+<li>If You are not using a database this should be set to <code>flat</code>.</li>
+<li>If you are using a Mongo database, this should be set to <code>mongo</code>.</li>
+</ul>
+<p><code>host</code>
+: Sets the IP address of the MySQL or Mongo database.  </p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This should <strong>NOT</strong> include port number</p>
+</div>
+<p><strong>Syntax:</strong> <code>host: your-database-ip</code>  </p>
+<p><code>port</code>
+: Sets the port on which the database is listening on.  </p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The default port for MySQL is 3306 and the default
+port for MongoDB is 27017</p>
+</div>
+<p><strong>Syntax:</strong> <code>port: database-port</code></p>
+<p><code>database</code>
+: Identifies the database in which to store data.<br />
+<strong>Syntax:</strong> <code>database: "database-name"</code>    </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This value is <strong>only</strong> needed for MySQL.</p>
+</div>
+<p><code>authentication</code>
+: Authentication settings.  </p>
+<p><code>enabled</code>
+: Turns on authentication for the database.<br />
+<strong>Syntax:</strong> <code>enabled: true|false</code>  </p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Authentication is required for MySQL.</p>
+</div>
+<p><code>username</code>
+: Sets the username used for authenticating with the database.<br />
+<strong>Syntax:</strong> <code>username: database-username</code></p>
+<p><code>password</code>
+: Sets the password used for authenticating with the database.<br />
+<strong>Syntax:</strong> <code>password: p4ssw0rd</code></p>
+<p><code>enable-signs</code>
+: Enables signs.<br />
+<strong>Syntax:</strong> <code>enable-signs: true|false</code></p>
+<p><code>enable-guis:</code>
+: Enables the in-game GUI's.<br />
+<strong>Syntax:</strong> <code>enable-guis: true|false</code></p>
+<p><code>exp</code>
+: In-game experience points settings.  </p>
+<p><code>kills</code>
+: Defines how many experience points a player should receive per kill.<br />
+<strong>Syntax:</strong> <code>kills: number-of-experience-points</code>  </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This should be a number with a decimal point. E.g. <code>kills: 25.0</code>. Even if it is a whole number, it should still have the <code>.0</code> after it.</p>
+</div>
+<p><code>filler-item</code>
+: This defines the item that should fill in the gaps in the inventory GUI.  </p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Item codes can be found <a href="https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html">here</a></p>
+</div>
+<p><code>abilities</code>: This allows you to customize how the abilities look<br />
+<strong>Syntax:</strong> <em>(Example)</em>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">tnt-shooter</span><span class="p">:</span> <span class="c1">#This is the name of the ability, it does not show up in-game.</span>
+  <span class="nt">displayname</span><span class="p">:</span>  <span class="s">&quot;&amp;cTnT</span><span class="nv"> </span><span class="s">Shooter&quot;</span> <span class="c1">#This is the name of the item that will give the ability.</span>
+  <span class="nt">material</span><span class="p">:</span>  <span class="s">&quot;TNT&quot;</span> <span class="c1">#This is the item that will be given to player, item codes can be found here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html</span>
+  <span class="nt">amount</span><span class="p">:</span>  <span class="l l-Scalar l-Scalar-Plain">10</span> <span class="c1">#How many of the items to give to the player.</span>
+  <span class="nt">lore</span><span class="p">:</span> <span class="c1">#Pretty text that is added to the item&#39;s description/lore box.</span>
+     <span class="p p-Indicator">-</span>  <span class="s">&quot;&amp;7Shoot</span><span class="nv"> </span><span class="s">opponents</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">primed</span><span class="nv"> </span><span class="s">tnt&quot;</span>
+     <span class="p p-Indicator">-</span>  <span class="s">&quot;&amp;7Just</span><span class="nv"> </span><span class="s">right</span><span class="nv"> </span><span class="s">click&quot;</span>
+</code></pre></div>
+</td></tr></table></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Minecraft color codes can be used in the lore quote marks in the config above, see end of docs.</p>
+</div>
+<p><code>scoreboard</code>
+: This section is where the scoreboard settings are defined.</p>
+<p><code>enabled</code>
+: This enables and disables the scoreboards.<br />
+<strong>Syntax:</strong> <code>true|false</code></p>
+<p><code>disabled-worlds</code>
+: This setting defines which worlds should be disabled.<br />
+In Spigot there are normally 3 worlds:</p>
+<ul>
+<li>world (Overworld)</li>
+<li>world_nether (The Nether)</li>
+<li>world_the_end (The End)</li>
+</ul>
+<p>You can disable any worlds here.<br />
+<strong>Syntax:</strong> 
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">disabled-worlds</span><span class="p">:</span>
+   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">world_the_end</span>
+   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">world_nether</span>
+</code></pre></div>
+</td></tr></table>
+<code>spawn</code>
+: This section defines the text on the spawn/lobby scoreboard.  </p>
+<p><code>title</code>
+: This defines the text at the top of the scoreboard (The Title).<br />
+<strong>Syntax:</strong> <code>title: "title-text"</code>  </p>
+<p><code>board</code>
+: This section defines the text on the scoreboard<br />
+<strong>Syntax:</strong>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">board</span><span class="p">:</span>
+ <span class="p p-Indicator">-</span>  <span class="s">&quot;&amp;7%bar%&quot;</span><span class="c1">#This is a bar/line colored gray with the code &#39;&amp;7&#39;</span>
+ <span class="p p-Indicator">-</span>  <span class="s">&quot;&amp;7Hello</span><span class="nv"> </span><span class="s">there</span><span class="nv"> </span><span class="s">%player%&quot;</span><span class="c1">#This says &#39;Hello there&#39; and then the players username, defined by &#39;%player%&#39; in the color gray, indicated by &#39;&amp;7&#39;.</span>
+ <span class="p p-Indicator">-</span>  <span class="s">&quot;&quot;</span><span class="c1">#This is just a blank space created by some empty quote marks - You could put some text in here.</span>
+ <span class="p p-Indicator">-</span>  <span class="s">&quot;&amp;7Kills:</span><span class="nv"> </span><span class="s">&amp;b%kills%&quot;</span><span class="c1">#This says &#39;Kills:&#39; in the color gray, indicated by the color code &#39;&amp;7&#39; followed by the number of kills, indicated by &#39;%kills%&#39; in the color aqua, indicated by &#39;&amp;b&#39;.</span>
+ <span class="p p-Indicator">-</span>  <span class="s">&quot;&amp;7Deaths:</span><span class="nv"> </span><span class="s">&amp;b%deaths%&quot;</span><span class="c1">#This says &#39;Deaths:&#39; in the color gray, indicated by the color code &#39;&amp;7&#39; followed by the number of deaths, indicated by &#39;%deaths%&#39; in the color aqua, indicated by &#39;&amp;b&#39;.</span>
+ <span class="p p-Indicator">-</span>  <span class="s">&quot;&quot;</span><span class="c1">#This is just a blank space created by some empty quote marks - You could put some text in here.</span>
+ <span class="p p-Indicator">-</span>  <span class="s">&quot;play.example.com&quot;</span><span class="c1">#Some customisable text</span>
+ <span class="p p-Indicator">-</span>  <span class="s">&quot;&amp;7%bar%&quot;</span><span class="c1">#This is a bar/line colored gray with the code &#39;&amp;7&#39;</span>
+</code></pre></div>
+</td></tr></table></p>
+<p><code>arena</code>
+: This section defines the text on the arena scoreboard.  </p>
+<p><code>title</code>
+: This defines the text at the top of the scoreboard (The Title).<br />
+<strong>Syntax:</strong> <code>title: "title-text"</code>  </p>
+<p><code>board</code>
+: This section defines the text on the scoreboard<br />
+<strong>Syntax:</strong>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">board</span><span class="p">:</span>
+ <span class="p p-Indicator">-</span>  <span class="s">&quot;&amp;7%bar%&quot;</span><span class="c1">#This is a bar/line colored gray with the code &#39;&amp;7&#39;</span>
+ <span class="p p-Indicator">-</span>  <span class="s">&quot;&amp;7Hello</span><span class="nv"> </span><span class="s">there</span><span class="nv"> </span><span class="s">%player%&quot;</span><span class="c1">#This says &#39;Hello there&#39; and then the players username, defined by &#39;%player%&#39; in the color gray, indicated by &#39;&amp;7&#39;.</span>
+ <span class="p p-Indicator">-</span>  <span class="s">&quot;&quot;</span><span class="c1">#This is just a blank space created by some empty quote marks - You could put some text in here.</span>
+ <span class="p p-Indicator">-</span>  <span class="s">&quot;&amp;7Kills:</span><span class="nv"> </span><span class="s">&amp;b%kills%&quot;</span><span class="c1">#This says &#39;Kills:&#39; in the color gray, indicated by the color code &#39;&amp;7&#39; followed by the number of kills, indicated by &#39;%kills%&#39; in the color aqua, indicated by &#39;&amp;b&#39;.</span>
+ <span class="p p-Indicator">-</span>  <span class="s">&quot;&amp;7Deaths:</span><span class="nv"> </span><span class="s">&amp;b%deaths%&quot;</span><span class="c1">#This says &#39;Deaths:&#39; in the color gray, indicated by the color code &#39;&amp;7&#39; followed by the number of deaths, indicated by &#39;%deaths%&#39; in the color aqua, indicated by &#39;&amp;b&#39;.</span>
+ <span class="p p-Indicator">-</span>  <span class="s">&quot;&quot;</span><span class="c1">#This is just a blank space created by some empty quote marks - You could put some text in here.</span>
+ <span class="p p-Indicator">-</span>  <span class="s">&quot;play.example.com&quot;</span><span class="c1">#Some customisable text</span>
+ <span class="p p-Indicator">-</span>  <span class="s">&quot;&amp;7%bar%&quot;</span><span class="c1">#This is a bar/line colored gray with the code &#39;&amp;7&#39;</span>
+</code></pre></div>
+</td></tr></table></p>
+<h2 id="messagesyml"><code>messages.yml</code></h2>
+<p>This section won't be so well documented as there is over 100 different messages and I think it is quite self-explanatory. However, I will document some of the more important things.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Message</th>
+<th align="center">Description</th>
+<th align="center">Placeholders</th>
+<th align="center">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>General</strong></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">prefix</td>
+<td align="center">A string of text used at the beginning of each message</td>
+<td align="center"></td>
+<td align="center">Leave blank for no prefix</td>
+</tr>
+<tr>
+<td align="center">exp-given</td>
+<td align="center">Sent when a player receives exp</td>
+<td align="center">%amount% - The amount of exp</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">stats-message</td>
+<td align="center">The /stats message</td>
+<td align="center">%deaths%, %kills%, %exp%, %level%, %killstreak%, %kdr%, %top_killstreak%</td>
+<td align="center">Self explanatory placeholders. <strong>This is a string list</strong></td>
+</tr>
+<tr>
+<td align="center">spawn-message</td>
+<td align="center">Message sent when /spawn is run</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">arena-message</td>
+<td align="center">Message sent when /play is run</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">permission-message</td>
+<td align="center">Message sent when a player dosent have permission to do something</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">console-command</td>
+<td align="center">Sent when the command is not available for the console</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">no-last-page</td>
+<td align="center">Sent when there is no previous page on a paginated menu</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">no-next-page</td>
+<td align="center">Sent when there is no next page on a paginated menu</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"><strong>Events</strong></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">death</td>
+<td align="center">Sent when a player dies to another player</td>
+<td align="center">%killer% - Who killed them</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">killed</td>
+<td align="center">Sent when you kill a player</td>
+<td align="center">%victim% - The person you killed</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">broadcast-death</td>
+<td align="center">Broadcast to the server when someone gets killed</td>
+<td align="center">%killer%, %victim%</td>
+<td align="center">Leave blank for no broadcast</td>
+</tr>
+<tr>
+<td align="center">arrow-hit</td>
+<td align="center">Sent when a player hits someone with a bow/arrow</td>
+<td align="center">%victim% - who they hit</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"><strong>Admin</strong></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">spawn-set</td>
+<td align="center">Message sent when /setspawn is ran</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">arena-set</td>
+<td align="center">Message sent when /setarena is ran</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">plugin-reloaded</td>
+<td align="center">Sent when you reload the plugin</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"><strong>Economy</strong></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">balance-message</td>
+<td align="center">/bal message</td>
+<td align="center">%balance% - Player's balance</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">other-balance-message</td>
+<td align="center">/balother message</td>
+<td align="center">%balance% - the targets balance, %target%</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">balance-set</td>
+<td align="center">When admin sets player's balance</td>
+<td align="center">%target%, %balance%</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">balance-reset</td>
+<td align="center">When admin resets a player's balance</td>
+<td align="center">%target%</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">balance-given</td>
+<td align="center">When admin gives X amount to player</td>
+<td align="center">%target%, %givenAmount%</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">pay-message</td>
+<td align="center">When you send a player money successfully</td>
+<td align="center">%targe%, %amount%</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">insufficient-balance</td>
+<td align="center">When a player dosent have a high enough balance</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">paid-message</td>
+<td align="center">When you get paid by another player</td>
+<td align="center">%payer% - Who paid you, %amount%</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">sent-to-self</td>
+<td align="center">When a player tries to send money to themselves</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"><strong>Abilities</strong></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">cooldown-message</td>
+<td align="center">Sent when a player tries to use a ability on cooldown</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">no-longer-on-cooldown</td>
+<td align="center">Sent when a ability comes off cooldown</td>
+<td align="center">%name% - ability name</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">sonic-activation-message</td>
+<td align="center">Sent when sonic ability is activated</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">fireman-activation-message</td>
+<td align="center">Sent when fireman ability is activated</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Though there is more, the rest is fairly self explanatory</strong></p>
+<hr />
+<h2 id="placeholders">Placeholders</h2>
+<p>These are all the placeholders supported by all the messages. Other messages may have specific placeholders. These will be listed in the comment above it</p>
+<table>
+<thead>
+<tr>
+<th align="center">Placeholder</th>
+<th align="center">Description</th>
+<th align="center">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">%player%</td>
+<td align="center">The player's name</td>
+<td align="center">Can only be used where a player is applicable</td>
+</tr>
+<tr>
+<td align="center">%bar%</td>
+<td align="center">Will return a line</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">%blank%</td>
+<td align="center">Will return blank</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">%left_arrow%</td>
+<td align="center">«</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">%right_arrow%</td>
+<td align="center">»</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">%cross%</td>
+<td align="center">✖</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">%warning%</td>
+<td align="center">⚠</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">%heart%</td>
+<td align="center">❤</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">The following placeholders require PlaceHolderAPI</td>
+</tr>
+<tr>
+<td align="center">%kpvp_deaths%</td>
+<td align="center">The death count of the player</td>
+<td align="center">Can only be used when player is applicable</td>
+</tr>
+<tr>
+<td align="center">%kpvp_kills%</td>
+<td align="center">The kill count of the player</td>
+<td align="center">Can only be used where a player is applicable</td>
+</tr>
+<tr>
+<td align="center">%kpvp_exp%</td>
+<td align="center">The exp of the player</td>
+<td align="center">Can only be used where a player is applicable</td>
+</tr>
+<tr>
+<td align="center">%kpvp_level%</td>
+<td align="center">The level of the player</td>
+<td align="center">Can only be used where a player is applicable</td>
+</tr>
+<tr>
+<td align="center">%kpvp_bal%</td>
+<td align="center">The balance of the player</td>
+<td align="center">Can only be used where a player is applicable</td>
+</tr>
+</tbody>
+</table>
+<p><code>prefix</code>
+: This is a bit of text that prefixes every message.<br />
+E.g. <code>[KitPvP Plus] You don't have permission</code></p>
+<h2 id="minecraft-color-codes">Minecraft color Codes</h2>
+<p>Here is an example on how to use color codes:</p>
+<p><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /> <code>"&amp;4Red Text"</code>: This text is red as it uses the '&amp;4' color code.</p>
+<p><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /> <code>"&amp;4&amp;nRed Underlined text"</code>: This text is red and underlined as it uses the '&amp;4' color code to make it red and the '&amp;n' formatting code to underline.</p>
+<p><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /> <code>"&amp;cRed &amp;aGreen &amp;9Blue"</code>: You can color code different words by placing color codes next to them.</p>
+<p><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /> <code>"Red&amp;c Green&amp;a Blue&amp;9"</code>: This would highlight the text in front of the color code so "Red" wouldn't be colored and "Green" would be highlighted red and so on and so forth.</p>
+<table>
+<thead>
+<tr>
+<th align="center">color</th>
+<th align="center">Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Dark Red</td>
+<td align="center">&amp;4</td>
+</tr>
+<tr>
+<td align="center">Red</td>
+<td align="center">&amp;c</td>
+</tr>
+<tr>
+<td align="center">Gold</td>
+<td align="center">&amp;6</td>
+</tr>
+<tr>
+<td align="center">Yellow</td>
+<td align="center">&amp;e</td>
+</tr>
+<tr>
+<td align="center">Dark Green</td>
+<td align="center">&amp;2</td>
+</tr>
+<tr>
+<td align="center">Green</td>
+<td align="center">&amp;a</td>
+</tr>
+<tr>
+<td align="center">Dark Aqua</td>
+<td align="center">&amp;3</td>
+</tr>
+<tr>
+<td align="center">Aqua</td>
+<td align="center">&amp;b</td>
+</tr>
+<tr>
+<td align="center">Dark Blue</td>
+<td align="center">&amp;1</td>
+</tr>
+<tr>
+<td align="center">Blue</td>
+<td align="center">&amp;9</td>
+</tr>
+<tr>
+<td align="center">Light Purple</td>
+<td align="center">&amp;d</td>
+</tr>
+<tr>
+<td align="center">Dark Purple</td>
+<td align="center">&amp;5</td>
+</tr>
+<tr>
+<td align="center">White</td>
+<td align="center">&amp;f</td>
+</tr>
+<tr>
+<td align="center">Gray</td>
+<td align="center">&amp;7</td>
+</tr>
+<tr>
+<td align="center">Dark Gray</td>
+<td align="center">&amp;8</td>
+</tr>
+<tr>
+<td align="center">Black</td>
+<td align="center">&amp;0</td>
+</tr>
+<tr>
+<td align="center"><strong>Bold</strong></td>
+<td align="center">&amp;l</td>
+</tr>
+<tr>
+<td align="center"><em>Italics</em></td>
+<td align="center">&amp;o</td>
+</tr>
+<tr>
+<td align="center">Underline</td>
+<td align="center">&amp;n</td>
+</tr>
+<tr>
+<td align="center">~~Strikethrough~~</td>
+<td align="center">&amp;m</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>Found a problem? This documentation is open source and can be found <a href="https://github.com/Nuckerr/KitPvPPlus-docs">here</a>.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../commands/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Commands" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Commands
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../plugin-api/" class="md-footer__link md-footer__link--next" aria-label="Next: Plugin API" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Plugin API
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2021 Nucker Development
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/Nuckerr/KitPvPPlus" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.ddd52ceb.min.js"></script>
+      
+    
+  </body>
+</html>
