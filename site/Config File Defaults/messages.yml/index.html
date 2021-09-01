@@ -13,7 +13,7 @@
         <meta name="author" content="Nucker development">
       
       
-        <link rel="canonical" href="https://wiki.nucker.me/Default%20Config%20Files/config.yml/">
+        <link rel="canonical" href="https://wiki.nucker.me/Config%20File%20Defaults/messages.yml/">
       
       <link rel="icon" href="../../assets/icon.png">
       <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.10">
@@ -310,15 +310,27 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
       
       <label class="md-nav__link" for="__nav_6">
-        Default Config Files
+        Config File Defaults
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Default Config Files" data-md-level="1">
+      <nav class="md-nav" aria-label="Config File Defaults" data-md-level="1">
         <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
-          Default Config Files
+          Config File Defaults
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../config.yml/" class="md-nav__link">
+        ___  __    ___  _________        ________  ___      ___ ________        ________  ___       ___  ___  ________
+      </a>
+    </li>
+  
+
           
             
   
@@ -338,18 +350,6 @@
         ___  __    ___  _________        ________  ___      ___ ________        ________  ___       ___  ___  ________
       </a>
       
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../messages.yml/" class="md-nav__link">
-        ___  __    ___  _________        ________  ___      ___ ________        ________  ___       ___  ___  ________
-      </a>
     </li>
   
 
@@ -453,91 +453,133 @@
 #    |<strong>| |</strong>||<strong>|    |</strong>|        |<strong>|     |</strong>|/       |<strong>|           |</strong>|     |<strong><em>_</em></strong>||<strong><em>_</em></strong>|_<strong><em>_</em></strong></em>\</p>
 <h1 id="___">|<strong><em>_</em></strong>__|</h1>
 <h1 id="kitpvp-plus">KitPvP Plus</h1>
-<h1 id="configyml">config.yml</h1>
-<p>update:
-  alert: true
-  # Coming soon
-  auto-download: false
-  # In minutes
-  re-check-alert: 10</p>
-<p>data-storage:
-  # mysql, mongo, flat
-  type: flat
-  # Only needed for mysql and mongo
-  host: localhost
-  port: 3306
-  # Only needed for MySQL
-  database: "KitPVP"
-  authentication:
-    # Must be enabled for mysql. Leave password in blank quotes for empty password
-    enabled: true
-    username: root
-    password: ""</p>
-<p>enable-signs: true
-enable-guis: true</p>
-<p>exp:
-  kills: 25
-  deaths: 5</p>
-<p>death-sound: "ENTITY_ENDERMAN_DEATH"
-arrow-hit-sound: "BLOCK_NOTE_BLOCK_PLING"</p>
-<p>filler-item: "STAINED_GLASS_PANE"
-abilities:
-  tnt-shooter:
-    displayname: "&amp;cTNT Shooter"
-    material: "TNT"
-    amount: 10
-    lore:
-      - "&amp;7Shoot opponents with primed tnt"
-      - "&amp;7Just right click"
-  fireball:
-    displayname: "&amp;6Fireball"
-    material: "FIREBALL"
-    amount: 10
-    lore:
-      - "&amp;7Shoot it and fireballs appear!"
-      - "&amp;7Just right click"
-  sonic:
-    displayname: "&amp;9SONIC!!!"
-    material: "LAPIS_BLOCK"
-    amount: 1
-    lore:
-      - "&amp;9I AM SPEEEEEEEEEED!!!"
-      - "&amp;7Right click to give speed!"
-  fireman:
-    displayname: "&amp;aFireman"
-    material: "BUCKET"
-    amount: 1
-    lore:
-      - "&amp;7If your on fire, put your self out by right clicking this"
-      - "&amp;7Right click to give speed!"</p>
-<h1 id="when-soup-is-used-should-the-empty-bowl-be-removed-from-the-inventory">When soup is used, should the empty bowl be removed from the inventory</h1>
-<p>remove-empty-soup: true</p>
-<p>scoreboard:
+<h1 id="messagesyml">messages.yml</h1>
+<p>general:
+  prefix: "&amp;e[&amp;bKitPvP Plus&amp;e] "
+  exp-given: '&amp;eYou have received %amount% exp'
+  stats-message:
+    - "&amp;b%bar%"
+    - "&amp;7Deaths: %deaths%"
+    - "&amp;7Kills: %kills%"
+    - "&amp;7Exp: %exp%"
+    - "&amp;7Level: %level%"
+    - "&amp;7Killstreak: %killstreak%"
+    - "&amp;7KDR: %kdr%"
+    - "&amp;b%bar%"
+  spawn-message: '&amp;eYou have been sent to spawn!'
+  arena-message: '&amp;aYou are now in the arena'
+  permission-message: '&amp;cYou dont have permission to run this command'
+  console-command: '&amp;cConsole cannot run this command'
+  no-last-page: "&amp;cNo last page"
+  no-next-page: "&amp;cNo next page"
+events:
+  death: "&amp;cYou died to %killer%"
+  killed: "&amp;aYou just killed %victim%"
+  broadcast-death: "&amp;a&amp;l%killer% just killed %victim%"
+  arrow-hit: "&amp;aYou hit %victim%"
+health-display:
   enabled: true
-  disabled-worlds:
-    - world_the_end
-  spawn:
-    title: "&amp;c&amp;lSpawn"
-    board:
-      - "&amp;7%bar%"
-      - "&amp;7Hello there %player%"
-      - ""
-      - "&amp;7Kills: &amp;b%kills%"
-      - "&amp;7Deaths: &amp;b%deaths%"
-      - ""
-      - "play.example.com"
-      - "&amp;7%bar%"
-  arena:
-    title: "&amp;c&amp;lArena"
-    board:
-      - "&amp;7%bar%"
-      - "&amp;7Hello there %player%"
-      - ""
-      - "&amp;7Kills: &amp;b%kills%"
-      - "&amp;7Deaths: &amp;b%deaths%"
-      - ""
-      - "play.example.com"
-      - "&amp;7%bar%"</p>
+  # Everything after the number
+  message: "&amp;f%health%  &amp;c%heart%"
+admin:
+  spawn-set: '&amp;aSpawn has been set'
+  arena-set: '&amp;aArena has been set'
+  plugin-reloaded: '&amp;aPlugin has been reloaded'
+economy:
+  balance-message: '&amp;eYour balance is %balance%'
+  other-balance-message: "&amp;e%target%'s balance is %balance%"
+  balance-set: '&amp;aYou have set %target%''s balance to %balance%$'
+  balance-reset: '&amp;cYou have reset %target%''s balance'
+  balance-given: '&amp;aYou have given %givenAmount%$ to %target%'
+  pay-message: '&amp;aYou successfully paid %target% %amount%$'
+  insufficient-balance: '&amp;cYou dont have enough money for this'
+  paid-message: '&amp;aYou where paid %amount%$ by %payer%'
+  sent-to-self: '&amp;cYou cant send money to yourself!'
+abilities:
+  cooldown-message: '&amp;cYour still on cooldown'
+  no-longer-on-cooldown: '&amp;a%name% is no longer on cooldown'
+  sonic-activation-message: '&amp;9Speed activated for 1 minute'
+  fire-man-activation-message: '&amp;6Put you out!'
+kits:
+  kit-loaded: '&amp;aLoaded kit %kitname%'
+  kit-not-owned: '&amp;cYou dont own this kit'
+  kit-already-owned: '&amp;cYou already own this kit'
+  kit-given: '&amp;aYou where given %kitname% by %player%'
+  kit-sent: '&amp;aYou sent %target% %kitname%'
+  kit-created: '&amp;aCreated %kitname%'
+  kit-deleted: '&amp;cDeleted kit %kitname%'
+  kit-edit-displayname: '&amp;aSet kit %kitname%''s displayname to %newname%'
+  kit-edit-icon: '&amp;aSet kit %kitname%''s icon to %itemname%'
+  kit-edit-contents: '&amp;aSet kit %kitname%''s contents to your inventory'
+  kit-edit-permission: '&amp;aSet %kitname%''s permission to %permission%'
+  kit-edit-price: '&amp;aSet %kitname%''s price to %price%'
+  kit-edit-cooldown: '&amp;aSet %kitname%''s cooldown to %cooldown%'
+  kit-on-cooldown: '&amp;cThis kit is on cooldown'
+  kit-dosent-exist: '&amp;cThat kit dosent exist'
+  kit-already-exists: '&amp;cThat kit already exists'
+  kit-menu-opening: "&amp;aOpening menu"
+  kit-purchase-canceled: "&amp;cPurchase canceled"
+  kit-purchase: "&amp;aYou purchased %kit%"
+leaderboards:
+  death-leaderboad: "&amp;e&amp;lDeath leaderboard"
+  kills-leaderboad: "&amp;e&amp;lKills leaderboard"
+  exp-leaderboad: "&amp;e&amp;lExp leaderboard"
+  balance-leaderboad: "&amp;e&amp;lBalance leaderboard"
+  killstreak-leaderboad: "&amp;e&amp;lKillstreak leaderboard"
+  kdr-leaderboad: "&amp;e&amp;lKDR leaderboard"
+  level-leaderboad: "&amp;e&amp;lLevel leaderboard"
+help-commands:
+  kit-command:
+    - "&amp;9%bar%"
+    - "&amp;8- &amp;b/kit <kitname> [player] &amp;8- &amp;7Loads given kit (to given player if provided)"
+    - "&amp;8- &amp;b/kit edit displayname <kitname> <newdisplayname> &amp;8- &amp;7Edits the displayname of given kit"
+    - "&amp;8- &amp;b/kit edit icon <kitname> &amp;8- &amp;7Edits the icon of given kit to the item in your hand"
+    - "&amp;8- &amp;b/kit contents <kitname> &amp;8- &amp;7Edits the contents of given kit to your inventory"
+    - "&amp;9%bar%"
+  core-command:
+    - "&amp;b%bar%"
+    - "&amp;8- &amp;9/kitpvp reload &amp;8- &amp;7Reloads the configs and database"
+    - "&amp;8- &amp;9/kitpvp reload config &amp;8- &amp;7Reloads just the configs"
+    - "&amp;8- &amp;9/kitpvp reload database &amp;8- &amp;7Reloads just the database"
+    - "&amp;8- &amp;9/kitpvp credits &amp;8- &amp;7Sends the credits"
+    - "&amp;b%bar%"
+  eco-help:
+    - "&amp;d%bar%"
+    - "&amp;8- &amp;d/eco give [player] [amount] &amp;8- &amp;7Gives the player x amount of money"
+    - "&amp;8- &amp;d/eco set [player] [amount] &amp;8- &amp;7Sets the player's balance to x"
+    - "&amp;8- &amp;d/eco reset [player] [amount] &amp;8- &amp;7Sets the player's balance to 0"
+    - "&amp;d%bar%"
+  kit-admin:
+    - "&amp;c%bar%"
+    - "&amp;c/kit edit displayname [name] &amp;8- &amp;7Edit the displayname of the kit"
+    - "&amp;c/kit edit icon &amp;8- &amp;7Sets the icon of the kit to the item in your hand"
+    - "&amp;c/kit edit contents &amp;8- &amp;7Sets the contents of the kit to your inventory"
+    - "&amp;c/kit edit permission [permission &amp;8- &amp;7Sets the permission of the kit"
+    - "&amp;c/kit edit price [price] &amp;8- &amp;7Sets the price of the kit (set to 0 to be free)"
+    - "&amp;c/kit edit cooldown [cooldown[ &amp;8- &amp;7Sets the cooldown time of the kit (set to 0 for none)"
+    - "&amp;c%bar%"
+  stats-admin:
+    - "&amp;9%bar%"
+    - "&amp;b/kitpvp set exp [player] [exp] &amp;8- &amp;7Edit the exp of a player"
+    - "&amp;b/kitpvp set kills [player] [kills] &amp;8- &amp;7Edit the kills of a player"
+    - "&amp;b/kitpvp set deaths [player] [deaths] &amp;8- &amp;7Edit the deaths of a player"
+    - "&amp;b/kitpvp clear deaths [player] &amp;8- &amp;7Clears the deaths of a player"
+    - "&amp;b/kitpvp clear kills [player] &amp;8- &amp;7Clears the kills of a player"
+    - "&amp;b/kitpvp clear exp [player] &amp;8- &amp;7Clears the exp of a player"
+    - "&amp;b/kitpvp clear [player] &amp;8- &amp;7Clears all the stats of a player"
+    - "&amp;9%bar%"
+sign-contents:
+  sign-set: "&amp;aSign was set to %sign_type%"
+  sign-deleted: "&amp;cSign was deleted"
+  arena-sign:
+    - "&amp;a[Right click]"
+    - "&amp;0To join the arena!"
+  spawn-sign:
+    - "&amp;a[Right click]"
+    - "&amp;0To go to spawn"
+  kit-gui-sign:
+    - "&amp;a[Right click]"
+    - "&amp;0To open the kit GUI"</p>
                 
               
               
@@ -562,7 +604,7 @@ abilities:
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../../signs/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Signs" rel="prev">
+        <a href="../config.yml/" class="md-footer__link md-footer__link--prev" aria-label="Previous: ___  __    ___  _________        ________  ___      ___ ________        ________  ___       ___  ___  ________" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -571,20 +613,20 @@ abilities:
               <span class="md-footer__direction">
                 Previous
               </span>
-              Signs
+              ___  __    ___  _________        ________  ___      ___ ________        ________  ___       ___  ___  ________
             </div>
           </div>
         </a>
       
       
         
-        <a href="../messages.yml/" class="md-footer__link md-footer__link--next" aria-label="Next: ___  __    ___  _________        ________  ___      ___ ________        ________  ___       ___  ___  ________" rel="next">
+        <a href="../../guides/creating-kits/" class="md-footer__link md-footer__link--next" aria-label="Next: Creating kits" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              ___  __    ___  _________        ________  ___      ___ ________        ________  ___       ___  ___  ________
+              Creating kits
             </div>
           </div>
           <div class="md-footer__button md-icon">

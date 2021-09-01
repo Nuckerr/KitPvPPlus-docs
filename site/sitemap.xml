@@ -2,47 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://wiki.nucker.me/</loc>
-         <lastmod>2021-08-28</lastmod>
+         <lastmod>2021-09-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.nucker.me/commands/</loc>
-         <lastmod>2021-08-28</lastmod>
+         <lastmod>2021-09-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.nucker.me/configs/</loc>
-         <lastmod>2021-08-28</lastmod>
+         <lastmod>2021-09-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.nucker.me/plugin-api/</loc>
-         <lastmod>2021-08-28</lastmod>
+         <lastmod>2021-09-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.nucker.me/signs/</loc>
-         <lastmod>2021-08-28</lastmod>
+         <lastmod>2021-09-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wiki.nucker.me/Default%20Config%20Files/config.yml/</loc>
-         <lastmod>2021-08-28</lastmod>
+         <loc>https://wiki.nucker.me/Config%20File%20Defaults/config.yml/</loc>
+         <lastmod>2021-09-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wiki.nucker.me/Default%20Config%20Files/messages.yml/</loc>
-         <lastmod>2021-08-28</lastmod>
+         <loc>https://wiki.nucker.me/Config%20File%20Defaults/messages.yml/</loc>
+         <lastmod>2021-09-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.nucker.me/guides/creating-kits/</loc>
-         <lastmod>2021-08-28</lastmod>
+         <lastmod>2021-09-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.nucker.me/guides/worldguard/</loc>
-         <lastmod>2021-08-28</lastmod>
+         <lastmod>2021-09-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
