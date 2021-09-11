@@ -33,6 +33,10 @@ First of all you need to add the api as a dependency to your project
         compileOnly "wtf.nucker:KitPvPPlus-API:1.0.2"
     }
     ```
+Finally, add the following to your `plugin.yml`:
+```yaml
+dependencies: [KitPvPPlus]
+```
 
 ### API Access
 You can now use the api! In our main class we can do this:  
