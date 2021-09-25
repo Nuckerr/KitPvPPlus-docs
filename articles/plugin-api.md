@@ -19,7 +19,7 @@ First of all you need to add the api as a dependency to your project
     <dependency>
         <groupId>wtf.nucker</groupId>
         <artifactId>KitPvPPlus-API</artifactId>
-        <version>1.0.2</version>
+        <version>1.0.3</version>
         <scope>provided</scope>
     </dependency>
     ```
@@ -30,7 +30,7 @@ First of all you need to add the api as a dependency to your project
     }
 
     dependencies {
-        compileOnly "wtf.nucker:KitPvPPlus-API:1.0.2"
+        compileOnly "wtf.nucker:KitPvPPlus-API:1.0.3"
     }
     ```
 Finally, add the following to your `plugin.yml`:
@@ -78,6 +78,10 @@ There, as simple as that! You can use your IDE's auto-suggest features to see wh
     }
 ```
 
+!!! info
+    You can actually get playerdata of offline players, however if they have never joined the server they will
+    just have blank data
+
 ## Event Listeners
 The API usefully adds some bukkit events so you can run code when certain things happen
 
@@ -106,6 +110,7 @@ The API usefully adds some bukkit events so you can run code when certain things
 |`AbilityActivateEvent`|Called when a player activates an event|
 |`KitLoadEvent`|Called when someone loads the event|
 |`StateChangeEvent`|Called when the player's state changes|
+|`PlayerDataCreationEvent`|Called when playerdata is created|
 
 
 ## Custom abilities
@@ -258,11 +263,45 @@ Here are some examples of how we can get information:
     }
 ```
 
+## Kit manager
+The kit manager allows you to interact with and create kits. You can access the kit manager by running:
+```java
+KitPvPPlusAPI.getKitManager();
+```
+You can get a kit by doing:
+```java
+Kit myKit = KitPvPPlusAPI.getKitManager().getKitById("kit-id");
+// Within the kit class, you can do all sorts such as get it's price or load it onto a player
+int price = myKit.getPrice();
+Player player = Bukkit.getPlayerExact("Notch");
+myKit.loadKit(player);
+```
+!!! tip
+    You can get a list of all kits by doing
+    ```java
+    kitManager.getKits();
+    ```
+
+Finally, you can create kits my doing
+```java
+Kit newKit = kitManager.createKit("kit-name");
+newKit.setDisplayname("My awesome kit");
+newKit.setContents(player.getInventory());
+```
+These are the default values of a new kit:
+```
+Displayname: Your kit id in blue
+Icon: Paper
+Lore: "Edit to set the lore"
+Contents: Empty inventory
+Permission: "" (None)
+Price: 1
+Cooldown: 0 (None)
 ## Coming soon
 |Feature|ETA|
 |:------:|:--:|
 |Ability Manager|*None*|
-|Kit Manager|*None*|
+|Kit Manager|Done|
 
 ---
 Found a problem? This documentation is open source and can be found [here](https://github.com/Nuckerr/KitPvPPlus-docs).

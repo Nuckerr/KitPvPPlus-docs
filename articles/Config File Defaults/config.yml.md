@@ -1,3 +1,4 @@
+```yaml 
 # ___  __    ___  _________        ________  ___      ___ ________        ________  ___       ___  ___  ________
 #|\  \|\  \ |\  \|\___   ___\     |\   __  \|\  \    /  /|\   __  \      |\   __  \|\  \     |\  \|\  \|\   ____\
 #\ \  \/  /|\ \  \|___ \  \_|     \ \  \|\  \ \  \  /  / | \  \|\  \     \ \  \|\  \ \  \    \ \  \\\  \ \  \___|_
@@ -7,6 +8,7 @@
 #    \|__| \|__|\|__|    \|__|        \|__|     \|__|/       \|__|           \|__|     \|_______|\|_______|\_________\
 #                                                                                                         \|_________|
 # KitPvP Plus
+# Download here: http://nckr.link/kpp
 # config.yml
 
 update:
@@ -15,6 +17,8 @@ update:
   auto-download: false
   # In minutes
   re-check-alert: 10
+  # If update alerts are enabled, should it check for beta updates
+  notify-beta: false
 
 data-storage:
   # mysql, mongo, flat
@@ -74,6 +78,10 @@ abilities:
 # When soup is used, should the empty bowl be removed from the inventory
 remove-empty-soup: true
 
+kill-commands:
+  - "tell %player% You died to %killer%"
+  - "tell %killer% You killed %player%"
+
 scoreboard:
   enabled: true
   disabled-worlds:
@@ -100,3 +108,4 @@ scoreboard:
       - ""
       - "play.example.com"
       - "&7%bar%"
+```

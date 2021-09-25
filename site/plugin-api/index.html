@@ -401,6 +401,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#kit-manager" class="md-nav__link">
+    Kit manager
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#coming-soon" class="md-nav__link">
     Coming soon
   </a>
@@ -460,7 +467,7 @@
   
     <li class="md-nav__item">
       <a href="../Config%20File%20Defaults/config.yml/" class="md-nav__link">
-        ___  __    ___  _________        ________  ___      ___ ________        ________  ___       ___  ___  ________
+        Config.yml
       </a>
     </li>
   
@@ -472,7 +479,7 @@
   
     <li class="md-nav__item">
       <a href="../Config%20File%20Defaults/messages.yml/" class="md-nav__link">
-        ___  __    ___  _________        ________  ___      ___ ________        ________  ___       ___  ___  ________
+        Messages.yml
       </a>
     </li>
   
@@ -660,6 +667,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#kit-manager" class="md-nav__link">
+    Kit manager
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#coming-soon" class="md-nav__link">
     Coming soon
   </a>
@@ -705,7 +719,7 @@ use the internal plugin to access them in the mean time</p>
 <span class="nt">&lt;dependency&gt;</span>
     <span class="nt">&lt;groupId&gt;</span>wtf.nucker<span class="nt">&lt;/groupId&gt;</span>
     <span class="nt">&lt;artifactId&gt;</span>KitPvPPlus-API<span class="nt">&lt;/artifactId&gt;</span>
-    <span class="nt">&lt;version&gt;</span>1.0.2<span class="nt">&lt;/version&gt;</span>
+    <span class="nt">&lt;version&gt;</span>1.0.3<span class="nt">&lt;/version&gt;</span>
     <span class="nt">&lt;scope&gt;</span>provided<span class="nt">&lt;/scope&gt;</span>
 <span class="nt">&lt;/dependency&gt;</span>
 </code></pre></div>
@@ -723,7 +737,7 @@ use the internal plugin to access them in the mean time</p>
 }
 
 dependencies {
-    compileOnly &quot;wtf.nucker:KitPvPPlus-API:1.0.2&quot;
+    compileOnly &quot;wtf.nucker:KitPvPPlus-API:1.0.3&quot;
 }
 </code></pre></div>
 </td></tr></table>
@@ -795,6 +809,11 @@ There, as simple as that! You can use your IDE's auto-suggest features to see wh
     <span class="p">}</span>
 </code></pre></div>
 </td></tr></table></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>You can actually get playerdata of offline players, however if they have never joined the server they will
+just have blank data</p>
+</div>
 <h2 id="event-listeners">Event Listeners</h2>
 <p>The API usefully adds some bukkit events so you can run code when certain things happen</p>
 <div class="admonition example">
@@ -847,6 +866,10 @@ And in your main class:
 <tr>
 <td align="center"><code>StateChangeEvent</code></td>
 <td align="center">Called when the player's state changes</td>
+</tr>
+<tr>
+<td align="center"><code>PlayerDataCreationEvent</code></td>
+<td align="center">Called when playerdata is created</td>
 </tr>
 </tbody>
 </table>
@@ -1049,6 +1072,47 @@ Here are some examples of how we can get information:
     <span class="p">}</span>
 </code></pre></div>
 </td></tr></table></p>
+<h2 id="kit-manager">Kit manager</h2>
+<p>The kit manager allows you to interact with and create kits. You can access the kit manager by running:
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">KitPvPPlusAPI</span><span class="p">.</span><span class="na">getKitManager</span><span class="p">();</span>
+</code></pre></div>
+</td></tr></table>
+You can get a kit by doing:
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Kit</span> <span class="n">myKit</span> <span class="o">=</span> <span class="n">KitPvPPlusAPI</span><span class="p">.</span><span class="na">getKitManager</span><span class="p">().</span><span class="na">getKitById</span><span class="p">(</span><span class="s">&quot;kit-id&quot;</span><span class="p">);</span>
+<span class="c1">// Within the kit class, you can do all sorts such as get it&#39;s price or load it onto a player</span>
+<span class="kt">int</span> <span class="n">price</span> <span class="o">=</span> <span class="n">myKit</span><span class="p">.</span><span class="na">getPrice</span><span class="p">();</span>
+<span class="n">Player</span> <span class="n">player</span> <span class="o">=</span> <span class="n">Bukkit</span><span class="p">.</span><span class="na">getPlayerExact</span><span class="p">(</span><span class="s">&quot;Notch&quot;</span><span class="p">);</span>
+<span class="n">myKit</span><span class="p">.</span><span class="na">loadKit</span><span class="p">(</span><span class="n">player</span><span class="p">);</span>
+</code></pre></div>
+</td></tr></table></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can get a list of all kits by doing
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">kitManager</span><span class="p">.</span><span class="na">getKits</span><span class="p">();</span>
+</code></pre></div>
+</td></tr></table></p>
+</div>
+<p>Finally, you can create kits my doing
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Kit</span> <span class="n">newKit</span> <span class="o">=</span> <span class="n">kitManager</span><span class="p">.</span><span class="na">createKit</span><span class="p">(</span><span class="s">&quot;kit-name&quot;</span><span class="p">);</span>
+<span class="n">newKit</span><span class="p">.</span><span class="na">setDisplayname</span><span class="p">(</span><span class="s">&quot;My awesome kit&quot;</span><span class="p">);</span>
+<span class="n">newKit</span><span class="p">.</span><span class="na">setContents</span><span class="p">(</span><span class="n">player</span><span class="p">.</span><span class="na">getInventory</span><span class="p">());</span>
+</code></pre></div>
+</td></tr></table>
+These are the default values of a new kit:
+```
+Displayname: Your kit id in blue
+Icon: Paper
+Lore: "Edit to set the lore"
+Contents: Empty inventory
+Permission: "" (None)
+Price: 1
+Cooldown: 0 (None)</p>
 <h2 id="coming-soon">Coming soon</h2>
 <table>
 <thead>
@@ -1064,7 +1128,7 @@ Here are some examples of how we can get information:
 </tr>
 <tr>
 <td align="center">Kit Manager</td>
-<td align="center"><em>None</em></td>
+<td align="center">Done</td>
 </tr>
 </tbody>
 </table>
