@@ -19,7 +19,7 @@ First of all you need to add the api as a dependency to your project
     <dependency>
         <groupId>wtf.nucker</groupId>
         <artifactId>KitPvPPlus-API</artifactId>
-        <version>1.0.3</version>
+        <version1.2.0</version>
         <scope>provided</scope>
     </dependency>
     ```
@@ -30,7 +30,7 @@ First of all you need to add the api as a dependency to your project
     }
 
     dependencies {
-        compileOnly "wtf.nucker:KitPvPPlus-API:1.0.3"
+        compileOnly "wtf.nucker:KitPvPPlus-API:1.2.0"
     }
     ```
 Finally, add the following to your `plugin.yml`:
