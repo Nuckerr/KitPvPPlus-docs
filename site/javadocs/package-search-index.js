@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"wtf.nucker.kitpvpplus.api"},{"l":"wtf.nucker.kitpvpplus.api.events"},{"l":"wtf.nucker.kitpvpplus.api.managers"},{"l":"wtf.nucker.kitpvpplus.api.objects"}];updateSearchResults();

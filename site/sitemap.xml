@@ -2,83 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://wiki.nucker.me/</loc>
-<<<<<<< HEAD
-         <lastmod>2021-09-11</lastmod>
-=======
          <lastmod>2021-09-25</lastmod>
->>>>>>> Fixed a bunch of formating issues, updated plugin api page with kit manager
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.nucker.me/commands/</loc>
-<<<<<<< HEAD
-         <lastmod>2021-09-11</lastmod>
-=======
          <lastmod>2021-09-25</lastmod>
->>>>>>> Fixed a bunch of formating issues, updated plugin api page with kit manager
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.nucker.me/configs/</loc>
-<<<<<<< HEAD
-         <lastmod>2021-09-11</lastmod>
-=======
          <lastmod>2021-09-25</lastmod>
->>>>>>> Fixed a bunch of formating issues, updated plugin api page with kit manager
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.nucker.me/plugin-api/</loc>
-<<<<<<< HEAD
-         <lastmod>2021-09-11</lastmod>
-=======
          <lastmod>2021-09-25</lastmod>
->>>>>>> Fixed a bunch of formating issues, updated plugin api page with kit manager
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.nucker.me/signs/</loc>
-<<<<<<< HEAD
-         <lastmod>2021-09-11</lastmod>
-=======
          <lastmod>2021-09-25</lastmod>
->>>>>>> Fixed a bunch of formating issues, updated plugin api page with kit manager
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.nucker.me/Config%20File%20Defaults/config.yml/</loc>
-<<<<<<< HEAD
-         <lastmod>2021-09-11</lastmod>
-=======
          <lastmod>2021-09-25</lastmod>
->>>>>>> Fixed a bunch of formating issues, updated plugin api page with kit manager
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.nucker.me/Config%20File%20Defaults/messages.yml/</loc>
-<<<<<<< HEAD
-         <lastmod>2021-09-11</lastmod>
-=======
          <lastmod>2021-09-25</lastmod>
->>>>>>> Fixed a bunch of formating issues, updated plugin api page with kit manager
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.nucker.me/guides/creating-kits/</loc>
-<<<<<<< HEAD
-         <lastmod>2021-09-11</lastmod>
-=======
          <lastmod>2021-09-25</lastmod>
->>>>>>> Fixed a bunch of formating issues, updated plugin api page with kit manager
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.nucker.me/guides/worldguard/</loc>
-<<<<<<< HEAD
-         <lastmod>2021-09-11</lastmod>
-=======
          <lastmod>2021-09-25</lastmod>
->>>>>>> Fixed a bunch of formating issues, updated plugin api page with kit manager
          <changefreq>daily</changefreq>
     </url>
 </urlset>

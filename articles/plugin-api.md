@@ -19,7 +19,7 @@ First of all you need to add the api as a dependency to your project
     <dependency>
         <groupId>wtf.nucker</groupId>
         <artifactId>KitPvPPlus-API</artifactId>
-        <version1.2.0</version>
+        <version>1.2.0</version>
         <scope>provided</scope>
     </dependency>
     ```

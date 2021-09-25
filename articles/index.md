@@ -13,8 +13,8 @@ If you cant find the answer your looking for, you can ask in my [support server]
     - [Creating kits](/guides/creating-kits/)
     - [WorldGuard](/guides/worldguard/)
 - [Default Config files](#)
-    - [config.yml](/Default%20Config%20Files/config.yml/)
-    - [messages.yml](/Default%20Config%20Files/messages.yml/)
+    - [config.yml](/Config File Defaults/config.yml/)
+    - [messages.yml](/Config File Defaults/messages.yml/)
 
 ## Links
 - <a href="#" id="spigot">SpigotMC</a>
