@@ -26,7 +26,7 @@ Opens the kit selector or gives you a kit.
 - `/kit edit price <kitname> <price>` - Edits the price of the kit (Permission: `kitpvpplus.kits.edit`)
 - `/kit edit displayname <kitname> <newdisplayname>` - Edit's the displayname of a given kit. (Permission: `kitpvpplus.kits.edit`)
 - `/kit edit icon <kitname>` - Edits the icon of given kit to the item in your hand. (Permission: `kitpvpplus.kits.edit`)
-- `/kit contents <kitname>` - Edits the contents of the given kit to the items in your inventory. (Permission: `kitpvpplus.kits.edit`)
+- `/kit edit contents <kitname>` - Edits the contents of the given kit to the items in your inventory. (Permission: `kitpvpplus.kits.edit`)
 - `/kit delete <kitname>` - Deletes the given kit (Permission: kitpvpplus.kits.delete)
 
 `/kitpvp`  
