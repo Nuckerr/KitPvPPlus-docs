@@ -16,7 +16,7 @@ First of all your gonna want to create the kit. You can do this by running
 ## Step two
 You can now set the contents of the kit. Put all the items you want in your inventory and run
 ```
-/kit set contents <kitname>
+/kit edit contents <kitname>
 ```
 
 !!! example
@@ -25,7 +25,7 @@ You can now set the contents of the kit. Put all the items you want in your inve
 ## Step three *(Optional)*
 You can set an icon. This is the item type that appears in the kit gui (if you have the enabled). You can set it by running
 ```
-/kit set icon <kitname>
+/kit edit icon <kitname>
 ```
 This will set the icon of the kit to what ever item type is in your hand. **This will also set the lore/description from the item**
 
